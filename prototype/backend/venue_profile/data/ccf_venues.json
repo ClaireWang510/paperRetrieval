@@ -1,0 +1,6174 @@
+{
+  "meta": {
+    "name": "ccf_venue_profile",
+    "version": "2026.03",
+    "note": "Compact built-in mapping for reranking and intent filtering. Extend this list as needed."
+  },
+  "venues": [
+    {
+      "id": "tocs",
+      "name": "ACM Transactions on Computer Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOCS"
+      ]
+    },
+    {
+      "id": "tos",
+      "name": "ACM Transactions on Storage",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOS"
+      ]
+    },
+    {
+      "id": "tcad",
+      "name": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TCAD"
+      ]
+    },
+    {
+      "id": "tc",
+      "name": "IEEE Transactions on Computers",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TC"
+      ]
+    },
+    {
+      "id": "tpds",
+      "name": "IEEE Transactions on Parallel and Distributed Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TPDS"
+      ]
+    },
+    {
+      "id": "taco",
+      "name": "ACM Transactions on Architecture and Code Optimization",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TACO"
+      ]
+    },
+    {
+      "id": "taas",
+      "name": "ACM Transactions on Autonomous and Adaptive Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TAAS"
+      ]
+    },
+    {
+      "id": "todaes",
+      "name": "ACM Transactions on Design Automation of Electronic Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TODAES"
+      ]
+    },
+    {
+      "id": "tecs",
+      "name": "ACM Transactions on Embedded Computing Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TECS"
+      ]
+    },
+    {
+      "id": "trets",
+      "name": "ACM Transactions on Reconfigurable Technology and Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TRETS"
+      ]
+    },
+    {
+      "id": "tvlsi",
+      "name": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TVLSI"
+      ]
+    },
+    {
+      "id": "jpdc",
+      "name": "Journal of Parallel and Distributed Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JPDC"
+      ]
+    },
+    {
+      "id": "jsa",
+      "name": "Journal of Systems Architecture: Embedded Software Design",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JSA"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "Parallel Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "PC"
+      ]
+    },
+    {
+      "id": "pe",
+      "name": "Performance Evaluation: An International Journal",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "PE"
+      ]
+    },
+    {
+      "id": "tcc",
+      "name": "IEEE Transactions on Cloud Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TCC"
+      ]
+    },
+    {
+      "id": "jetc",
+      "name": "ACM Journal on Emerging Technologies in Computing Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JETC"
+      ]
+    },
+    {
+      "id": "ccpe",
+      "name": "Concurrency and Computation: Practice and Experience",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "CCPE"
+      ]
+    },
+    {
+      "id": "dc",
+      "name": "Distributed Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "DC"
+      ]
+    },
+    {
+      "id": "fgcs",
+      "name": "Future Generation Computer Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "FGCS"
+      ]
+    },
+    {
+      "id": "integration",
+      "name": "Integration, the VLSI Journal",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Integration"
+      ]
+    },
+    {
+      "id": "jetta",
+      "name": "Journal of Electronic Testing-Theory and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JETTA"
+      ]
+    },
+    {
+      "id": "jgc",
+      "name": "Journal of Grid Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JGC"
+      ]
+    },
+    {
+      "id": "rts",
+      "name": "Real-Time Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "RTS"
+      ]
+    },
+    {
+      "id": "tjsc",
+      "name": "The Journal of Supercomputing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TJSC"
+      ]
+    },
+    {
+      "id": "tcasi",
+      "name": "IEEE Transactions on Circuits and Systems I: Regular Papers",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TCASI",
+        "TCAS-I"
+      ]
+    },
+    {
+      "id": "ccf-thpc",
+      "name": "CCF Transactions on High Performance Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "CCF-THPC"
+      ]
+    },
+    {
+      "id": "tsusc",
+      "name": "IEEE Transactions on Sustainable Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TSUSC"
+      ]
+    },
+    {
+      "id": "ppopp",
+      "name": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "PPoPP"
+      ]
+    },
+    {
+      "id": "fast",
+      "name": "USENIX Conference on File and Storage Technologies",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "FAST"
+      ]
+    },
+    {
+      "id": "dac",
+      "name": "Design Automation Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "DAC"
+      ]
+    },
+    {
+      "id": "hpca",
+      "name": "IEEE International Symposium on High Performance Computer Architecture",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "HPCA"
+      ]
+    },
+    {
+      "id": "micro",
+      "name": "IEEE/ACM International Symposium on Microarchitecture",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "MICRO"
+      ]
+    },
+    {
+      "id": "sc",
+      "name": "International Conference for High Performance Computing, Networking, Storage, and Analysis",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SC"
+      ]
+    },
+    {
+      "id": "asplos",
+      "name": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ASPLOS"
+      ]
+    },
+    {
+      "id": "isca",
+      "name": "International Symposium on Computer Architecture",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ISCA"
+      ]
+    },
+    {
+      "id": "atc",
+      "name": "ACM SIGOPS Annual Technical Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ACM SIGOPS ATC",
+        "USENIX ATC"
+      ]
+    },
+    {
+      "id": "eurosys",
+      "name": "European Conference on Computer Systems",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "EuroSys"
+      ]
+    },
+    {
+      "id": "hpdc",
+      "name": "The International ACM Symposium on High-Performance Parallel and Distributed Computing",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "HPDC"
+      ]
+    },
+    {
+      "id": "socc",
+      "name": "ACM Symposium on Cloud Computing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SoCC"
+      ]
+    },
+    {
+      "id": "spaa",
+      "name": "ACM Symposium on Parallelism in Algorithms and Architectures",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SPAA"
+      ]
+    },
+    {
+      "id": "podc",
+      "name": "ACM Symposium on Principles of Distributed Computing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PODC"
+      ]
+    },
+    {
+      "id": "fpga",
+      "name": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "FPGA"
+      ]
+    },
+    {
+      "id": "cgo",
+      "name": "The International Symposium on Code Generation and Optimization",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CGO"
+      ]
+    },
+    {
+      "id": "date",
+      "name": "Design, Automation & Test in Europe",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "DATE"
+      ]
+    },
+    {
+      "id": "hotchips",
+      "name": "Hot Chips: A Symposium on High Performance Chips",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "HOT CHIPS"
+      ]
+    },
+    {
+      "id": "cluster",
+      "name": "IEEE International Conference on Cluster Computing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CLUSTER"
+      ]
+    },
+    {
+      "id": "iccd",
+      "name": "International Conference on Computer Design",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICCD"
+      ]
+    },
+    {
+      "id": "iccad",
+      "name": "International Conference on Computer-Aided Design",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICCAD"
+      ]
+    },
+    {
+      "id": "icdcs",
+      "name": "IEEE International Conference on Distributed Computing Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICDCS"
+      ]
+    },
+    {
+      "id": "codes-isss",
+      "name": "International Conference on Hardware/Software Co-design and System Synthesis",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CODES+ISSS"
+      ]
+    },
+    {
+      "id": "hipeac",
+      "name": "International Conference on High Performance and Embedded Architectures and Compilers",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "HiPEAC"
+      ]
+    },
+    {
+      "id": "sigmetrics",
+      "name": "International Conference on Measurement and Modeling of Computer Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SIGMETRICS"
+      ]
+    },
+    {
+      "id": "pact",
+      "name": "International Conference on Parallel Architectures and Compilation Techniques",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PACT"
+      ]
+    },
+    {
+      "id": "icpp",
+      "name": "International Conference on Parallel Processing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICPP"
+      ]
+    },
+    {
+      "id": "ics",
+      "name": "International Conference on Supercomputing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICS"
+      ]
+    },
+    {
+      "id": "vee",
+      "name": "International Conference on Virtual Execution Environments",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "VEE"
+      ]
+    },
+    {
+      "id": "ipdps",
+      "name": "IEEE International Parallel & Distributed Processing Symposium",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "IPDPS"
+      ]
+    },
+    {
+      "id": "performance",
+      "name": "International Symposium on Computer Performance, Modeling, Measurements and Evaluation",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "Performance"
+      ]
+    },
+    {
+      "id": "itc",
+      "name": "International Test Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ITC"
+      ]
+    },
+    {
+      "id": "lisa",
+      "name": "Large Installation System Administration Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "LISA"
+      ]
+    },
+    {
+      "id": "msst",
+      "name": "Mass Storage Systems and Technologies",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "MSST"
+      ]
+    },
+    {
+      "id": "rtas",
+      "name": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "RTAS"
+      ]
+    },
+    {
+      "id": "euro-par",
+      "name": "European Conference on Parallel and Distributed Computing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "Euro-Par"
+      ]
+    },
+    {
+      "id": "iscas",
+      "name": "IEEE International Symposium on Circuits and Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ISCAS"
+      ]
+    },
+    {
+      "id": "cf",
+      "name": "ACM International Conference on Computing Frontiers",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CF"
+      ]
+    },
+    {
+      "id": "systor",
+      "name": "ACM International Systems and Storage Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SYSTOR"
+      ]
+    },
+    {
+      "id": "nocs",
+      "name": "ACM/IEEE International Symposium on Networks-on-Chip",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "NOCS"
+      ]
+    },
+    {
+      "id": "asap",
+      "name": "IEEE International Conference on Application-Specific Systems, Architectures, and Processors",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ASAP"
+      ]
+    },
+    {
+      "id": "asp-dac",
+      "name": "Asia and South Pacific Design Automation Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ASP-DAC"
+      ]
+    },
+    {
+      "id": "ets",
+      "name": "IEEE European Test Symposium",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ETS"
+      ]
+    },
+    {
+      "id": "fpl",
+      "name": "International Conference on Field-Programmable Logic and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "FPL"
+      ]
+    },
+    {
+      "id": "fccm",
+      "name": "IEEE Symposium on Field-Programmable Custom Computing Machines",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "FCCM"
+      ]
+    },
+    {
+      "id": "glsvlsi",
+      "name": "Great Lakes Symposium on VLSI",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "GLSVLSI"
+      ]
+    },
+    {
+      "id": "ats",
+      "name": "IEEE Asian Test Symposium",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ATS"
+      ]
+    },
+    {
+      "id": "hpcc",
+      "name": "IEEE International Conference on High Performance Computing and Communications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "HPCC"
+      ]
+    },
+    {
+      "id": "hipc",
+      "name": "IEEE International Conference on High Performance Computing, Data and Analytics",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "HiPC"
+      ]
+    },
+    {
+      "id": "mascots",
+      "name": "International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MASCOTS"
+      ]
+    },
+    {
+      "id": "ispa",
+      "name": "IEEE International Symposium on Parallel and Distributed Processing with Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISPA"
+      ]
+    },
+    {
+      "id": "ccgrid",
+      "name": "IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CCGRID"
+      ]
+    },
+    {
+      "id": "npc",
+      "name": "IFIP International Conference on Network and Parallel Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "NPC"
+      ]
+    },
+    {
+      "id": "ica3pp",
+      "name": "International Conference on Algorithms and Architectures for Parallel Processing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICA3PP"
+      ]
+    },
+    {
+      "id": "cases",
+      "name": "International Conference on Compilers, Architectures, and Synthesis for Embedded Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CASES"
+      ]
+    },
+    {
+      "id": "fpt",
+      "name": "International Conference on Field-Programmable Technology",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "FPT"
+      ]
+    },
+    {
+      "id": "icpads",
+      "name": "International Conference on Parallel and Distributed Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICPADS"
+      ]
+    },
+    {
+      "id": "islped",
+      "name": "International Symposium on Low Power Electronics and Design",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISLPED"
+      ]
+    },
+    {
+      "id": "ispd",
+      "name": "International Symposium on Physical Design",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISPD"
+      ]
+    },
+    {
+      "id": "hoti",
+      "name": "IEEE Symposium on High-Performance Interconnects",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "HOTI"
+      ]
+    },
+    {
+      "id": "vts",
+      "name": "IEEE VLSI Test Symposium",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "VTS"
+      ]
+    },
+    {
+      "id": "itc-asia",
+      "name": "International Test Conference in Asia",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ITC-Asia"
+      ]
+    },
+    {
+      "id": "sec",
+      "name": "ACM/IEEE Symposium on Edge Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SEC"
+      ]
+    },
+    {
+      "id": "nas",
+      "name": "International Conference on Networking, Architecture and Storage",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "NAS"
+      ]
+    },
+    {
+      "id": "hotstorage",
+      "name": "HotStorage",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "HotStorage"
+      ]
+    },
+    {
+      "id": "appt",
+      "name": "International Symposium on Advanced Parallel Processing Technology",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APPT"
+      ]
+    },
+    {
+      "id": "jcc",
+      "name": "International Conference on JointCloud Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "JCC"
+      ]
+    },
+    {
+      "id": "jsac",
+      "name": "IEEE Journal on Selected Areas in Communications",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "JSAC"
+      ]
+    },
+    {
+      "id": "tmc",
+      "name": "IEEE Transactions on Mobile Computing",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TMC"
+      ]
+    },
+    {
+      "id": "ton",
+      "name": "IEEE/ACM Transactions on Networking",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TON"
+      ]
+    },
+    {
+      "id": "toit",
+      "name": "ACM Transactions on Internet Technology",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOIT"
+      ]
+    },
+    {
+      "id": "tomm",
+      "name": "ACM Transactions on Multimedia Computing, Communications and Applications",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOMM"
+      ]
+    },
+    {
+      "id": "tosn",
+      "name": "ACM Transactions on Sensor Networks",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOSN"
+      ]
+    },
+    {
+      "id": "cn",
+      "name": "Computer Networks",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "CN"
+      ]
+    },
+    {
+      "id": "tcom",
+      "name": "IEEE Transactions on Communications",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TCOM"
+      ]
+    },
+    {
+      "id": "twc",
+      "name": "IEEE Transactions on Wireless Communications",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TWC"
+      ]
+    },
+    {
+      "id": "adhoc",
+      "name": "Ad Hoc Networks",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Ad Hoc Networks"
+      ]
+    },
+    {
+      "id": "cc",
+      "name": "Computer Communications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "CC"
+      ]
+    },
+    {
+      "id": "tnsm",
+      "name": "IEEE Transactions on Network and Service Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TNSM"
+      ]
+    },
+    {
+      "id": "iet-com",
+      "name": "IET Communications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IET Communications"
+      ]
+    },
+    {
+      "id": "jnca",
+      "name": "Journal of Network and Computer Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JNCA"
+      ]
+    },
+    {
+      "id": "monet",
+      "name": "Mobile Networks and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "MONET"
+      ]
+    },
+    {
+      "id": "networks",
+      "name": "Networks",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Networks"
+      ]
+    },
+    {
+      "id": "ppna",
+      "name": "Peer-to-Peer Networking and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PPNA"
+      ]
+    },
+    {
+      "id": "wcmc",
+      "name": "Wireless Communications and Mobile Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "WCMC"
+      ]
+    },
+    {
+      "id": "wireless-networks",
+      "name": "Wireless Networks",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Wireless Networks"
+      ]
+    },
+    {
+      "id": "iot",
+      "name": "IEEE Internet of Things Journal",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IOT"
+      ]
+    },
+    {
+      "id": "tiot",
+      "name": "ACM Transactions on Internet of Things",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TIOT"
+      ]
+    },
+    {
+      "id": "sigcomm",
+      "name": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGCOMM"
+      ]
+    },
+    {
+      "id": "mobicom",
+      "name": "ACM International Conference on Mobile Computing and Networking",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "MobiCom"
+      ]
+    },
+    {
+      "id": "infocom",
+      "name": "IEEE International Conference on Computer Communications",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "INFOCOM"
+      ]
+    },
+    {
+      "id": "nsdi",
+      "name": "Symposium on Network System Design and Implementation",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "NSDI"
+      ]
+    },
+    {
+      "id": "sensys",
+      "name": "ACM Conference on Embedded Networked Sensor Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SenSys"
+      ]
+    },
+    {
+      "id": "conext",
+      "name": "ACM International Conference on Emerging Networking Experiments and Technologies",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CoNEXT"
+      ]
+    },
+    {
+      "id": "secon",
+      "name": "IEEE International Conference on Sensing, Communication, and Networking",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SECON"
+      ]
+    },
+    {
+      "id": "ipsn",
+      "name": "International Conference on Information Processing in Sensor Networks",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "IPSN"
+      ]
+    },
+    {
+      "id": "mobisys",
+      "name": "ACM International Conference on Mobile Systems, Applications, and Services",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "MobiSys"
+      ]
+    },
+    {
+      "id": "icnp",
+      "name": "IEEE International Conference on Network Protocols",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICNP"
+      ]
+    },
+    {
+      "id": "mobihoc",
+      "name": "International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "MobiHoc"
+      ]
+    },
+    {
+      "id": "nossdav",
+      "name": "International Workshop on Network and Operating System Support for Digital Audio and Video",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "NOSSDAV"
+      ]
+    },
+    {
+      "id": "iwqos",
+      "name": "IEEE/ACM International Workshop on Quality of Service",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "IWQoS"
+      ]
+    },
+    {
+      "id": "imc",
+      "name": "ACM Internet Measurement Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "IMC"
+      ]
+    },
+    {
+      "id": "ancs",
+      "name": "ACM/IEEE Symposium on Architectures for Networking and Communication Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ANCS"
+      ]
+    },
+    {
+      "id": "apnoms",
+      "name": "Asia-Pacific Network Operations and Management Symposium",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APNOMS"
+      ]
+    },
+    {
+      "id": "forte",
+      "name": "International Conference on Formal Techniques for Distributed Objects, Components, and Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "FORTE"
+      ]
+    },
+    {
+      "id": "lcn",
+      "name": "IEEE Conference on Local Computer Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "LCN"
+      ]
+    },
+    {
+      "id": "globecom",
+      "name": "IEEE Global Communications Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "GLOBECOM"
+      ]
+    },
+    {
+      "id": "icc",
+      "name": "IEEE International Conference on Communications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICC"
+      ]
+    },
+    {
+      "id": "icccn",
+      "name": "IEEE International Conference on Computer Communications and Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICCCN"
+      ]
+    },
+    {
+      "id": "mass",
+      "name": "IEEE International Conference on Mobile Adhoc and Sensor Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MASS"
+      ]
+    },
+    {
+      "id": "p2p",
+      "name": "IEEE International Conference on Peer-to-Peer Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "P2P"
+      ]
+    },
+    {
+      "id": "ipccc",
+      "name": "IEEE International Performance Computing and Communications Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IPCCC"
+      ]
+    },
+    {
+      "id": "wowmom",
+      "name": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WoWMoM"
+      ]
+    },
+    {
+      "id": "iscc",
+      "name": "IEEE Symposium on Computers and Communications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISCC"
+      ]
+    },
+    {
+      "id": "wcnc",
+      "name": "IEEE Wireless Communications and Networking Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WCNC"
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "IFIP International Conferences on Networking",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "Networking"
+      ]
+    },
+    {
+      "id": "im",
+      "name": "IFIP/IEEE International Symposium on Integrated Network Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IM"
+      ]
+    },
+    {
+      "id": "msn",
+      "name": "International Conference on Mobility, Sensing and Networking",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MSN"
+      ]
+    },
+    {
+      "id": "mswim",
+      "name": "International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MSWiM"
+      ]
+    },
+    {
+      "id": "wasa",
+      "name": "The International Conference on Wireless Artificial Intelligent Computing Systems and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WASA"
+      ]
+    },
+    {
+      "id": "hotnets",
+      "name": "ACM The Workshop on Hot Topics in Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "HotNets"
+      ]
+    },
+    {
+      "id": "apnet",
+      "name": "Asia-Pacific Workshop on Networking",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APNet"
+      ]
+    },
+    {
+      "id": "tdsc",
+      "name": "IEEE Transactions on Dependable and Secure Computing",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TDSC"
+      ]
+    },
+    {
+      "id": "tifs",
+      "name": "IEEE Transactions on Information Forensics and Security",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TIFS"
+      ]
+    },
+    {
+      "id": "joc",
+      "name": "Journal of Cryptology",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "Journal of Cryptology"
+      ]
+    },
+    {
+      "id": "tops",
+      "name": "ACM Transactions on Privacy and Security",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOPS"
+      ]
+    },
+    {
+      "id": "compsec",
+      "name": "Computers & Security",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Computers & Security"
+      ]
+    },
+    {
+      "id": "dcc",
+      "name": "Designs, Codes and Cryptography",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Designs, Codes and Cryptography"
+      ]
+    },
+    {
+      "id": "jcs",
+      "name": "Journal of Computer Security",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JCS"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Cybersecurity"
+      ]
+    },
+    {
+      "id": "clsr",
+      "name": "Computer Law & Security Review",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "CLSR"
+      ]
+    },
+    {
+      "id": "ejisec",
+      "name": "EURASIP Journal on Information Security",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "EURASIP Journal on Information Security"
+      ]
+    },
+    {
+      "id": "imcs",
+      "name": "Information and Computer Security",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IMCS"
+      ]
+    },
+    {
+      "id": "ijics",
+      "name": "International Journal of Information and Computer Security",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJICS"
+      ]
+    },
+    {
+      "id": "ijisp",
+      "name": "International Journal of Information Security and Privacy",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJISP"
+      ]
+    },
+    {
+      "id": "jisa",
+      "name": "Journal of Information Security and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JISA"
+      ]
+    },
+    {
+      "id": "scn",
+      "name": "Security and Communication Networks",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "SCN"
+      ]
+    },
+    {
+      "id": "hcc",
+      "name": "High-Confidence Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "HCC"
+      ]
+    },
+    {
+      "id": "ccs",
+      "name": "ACM Conference on Computer and Communications Security",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "CCS"
+      ]
+    },
+    {
+      "id": "eurocrypt",
+      "name": "International Conference on the Theory and Applications of Cryptographic Techniques",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "EUROCRYPT"
+      ]
+    },
+    {
+      "id": "sp",
+      "name": "IEEE Symposium on Security and Privacy",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "S&P",
+        "IEEE S&P"
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "International Cryptology Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "CRYPTO"
+      ]
+    },
+    {
+      "id": "usenix-security",
+      "name": "USENIX Security Symposium",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "USENIX Security",
+        "USENIX"
+      ]
+    },
+    {
+      "id": "ndss",
+      "name": "Network and Distributed System Security Symposium",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "NDSS"
+      ]
+    },
+    {
+      "id": "acsac",
+      "name": "Annual Computer Security Applications Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ACSAC"
+      ]
+    },
+    {
+      "id": "asiacrypt",
+      "name": "Annual International Conference on the Theory and Application of Cryptology and Information Security",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ASIACRYPT"
+      ]
+    },
+    {
+      "id": "esorics",
+      "name": "European Symposium on Research in Computer Security",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ESORICS"
+      ]
+    },
+    {
+      "id": "fse",
+      "name": "Fast Software Encryption",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "FSE"
+      ]
+    },
+    {
+      "id": "csfw",
+      "name": "IEEE Computer Security Foundations Workshop",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CSFW"
+      ]
+    },
+    {
+      "id": "srds",
+      "name": "IEEE International Symposium on Reliable Distributed Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SRDS"
+      ]
+    },
+    {
+      "id": "ches",
+      "name": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CHES"
+      ]
+    },
+    {
+      "id": "dsn",
+      "name": "International Conference on Dependable Systems and Networks",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "DSN"
+      ]
+    },
+    {
+      "id": "raid",
+      "name": "International Workshop on Practice and Theory in Public Key Cryptography",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "RAID"
+      ]
+    },
+    {
+      "id": "pkc",
+      "name": "International Workshop on Practice and Theory in Public Key Cryptography",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PKC"
+      ]
+    },
+    {
+      "id": "tcc",
+      "name": "Theory of Cryptography Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "TCC"
+      ]
+    },
+    {
+      "id": "wisec",
+      "name": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WiSec"
+      ]
+    },
+    {
+      "id": "sacmat",
+      "name": "ACM Symposium on Access Control Models and Technologies",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SACMAT"
+      ]
+    },
+    {
+      "id": "drm",
+      "name": "ACM Workshop on Digital Rights Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DRM"
+      ]
+    },
+    {
+      "id": "ihmmsec",
+      "name": "ACM Workshop on Information Hiding and Multimedia Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IH&MMSec"
+      ]
+    },
+    {
+      "id": "acns",
+      "name": "International Conference on Applied Cryptography and Network Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ACNS"
+      ]
+    },
+    {
+      "id": "asiaccs",
+      "name": "ACM Asia Conference on Computer and Communications Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "AsiaCCS"
+      ]
+    },
+    {
+      "id": "acisp",
+      "name": "Australasia Conference on Information Security and Privacy",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ACISP"
+      ]
+    },
+    {
+      "id": "ctrsa",
+      "name": "The Cryptographer's Track at RSA Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CT-RSA"
+      ]
+    },
+    {
+      "id": "dimva",
+      "name": "Conference on Detection of Intrusions and Malware & Vulnerability Assessment",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DIMVA"
+      ]
+    },
+    {
+      "id": "dfrws",
+      "name": "Digital Forensic Research Workshop",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DFRWS"
+      ]
+    },
+    {
+      "id": "fc",
+      "name": "Financial Cryptography and Data Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "FC"
+      ]
+    },
+    {
+      "id": "trustcom",
+      "name": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "TrustCom"
+      ]
+    },
+    {
+      "id": "sec",
+      "name": "IFIP International Information Security Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SEC"
+      ]
+    },
+    {
+      "id": "ifip-wg-11-9",
+      "name": "IFIP Working Group 11.9 International Conference on Digital Forensics",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IFIP WG 11.9"
+      ]
+    },
+    {
+      "id": "isc",
+      "name": "Information Security Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISC"
+      ]
+    },
+    {
+      "id": "icdf2c",
+      "name": "International Conference on Digital Forensics & Cyber Crime",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICDF2C"
+      ]
+    },
+    {
+      "id": "icics",
+      "name": "International Conference on Information and Communications Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICICS"
+      ]
+    },
+    {
+      "id": "securecomm",
+      "name": "International Conference on Security and Privacy in Communication Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SecureComm"
+      ]
+    },
+    {
+      "id": "nspw",
+      "name": "New Security Paradigms Workshop",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "NSPW"
+      ]
+    },
+    {
+      "id": "pam",
+      "name": "Passive and Active Measurement Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PAM"
+      ]
+    },
+    {
+      "id": "pets",
+      "name": "Privacy Enhancing Technologies Symposium",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PETS"
+      ]
+    },
+    {
+      "id": "sac",
+      "name": "Selected Areas in Cryptography",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SAC"
+      ]
+    },
+    {
+      "id": "soups",
+      "name": "Symposium On Usable Privacy and Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SOUPS"
+      ]
+    },
+    {
+      "id": "hotsec",
+      "name": "USENIX Workshop on Hot Topics in Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "HotSec"
+      ]
+    },
+    {
+      "id": "eurosp",
+      "name": "IEEE European Symposium on Security and Privacy",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "EuroS&P"
+      ]
+    },
+    {
+      "id": "inscrypt",
+      "name": "International Conference on Information Security and Cryptology",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "Inscrypt"
+      ]
+    },
+    {
+      "id": "codaspy",
+      "name": "Conference on Data and Application Security and Privacy",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CODASPY"
+      ]
+    },
+    {
+      "id": "blocksys",
+      "name": "International Conference on Blockchain, Artificial Intelligence, and Trustworthy Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "BlockSys"
+      ]
+    },
+    {
+      "id": "csccloud",
+      "name": "International Conference on Cyber Security and Cloud Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CSCCloud"
+      ]
+    },
+    {
+      "id": "toplas",
+      "name": "ACM Transactions on Programming Languages and Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOPLAS"
+      ]
+    },
+    {
+      "id": "tosem",
+      "name": "ACM Transactions on Software Engineering and Methodology",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOSEM"
+      ]
+    },
+    {
+      "id": "tse",
+      "name": "IEEE Transactions on Software Engineering",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TSE"
+      ]
+    },
+    {
+      "id": "tsc",
+      "name": "IEEE Transactions on Services Computing",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TSC"
+      ]
+    },
+    {
+      "id": "ase-journal",
+      "name": "Automated Software Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "ASE"
+      ]
+    },
+    {
+      "id": "ese",
+      "name": "Empirical Software Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "ESE"
+      ]
+    },
+    {
+      "id": "iet-software",
+      "name": "IET Software",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IETS"
+      ]
+    },
+    {
+      "id": "ist",
+      "name": "Information and Software Technology",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IST"
+      ]
+    },
+    {
+      "id": "jfp",
+      "name": "Journal of Functional Programming",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JFP"
+      ]
+    },
+    {
+      "id": "jsep",
+      "name": "Journal of Software: Evolution and Process",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JSEP"
+      ]
+    },
+    {
+      "id": "jss",
+      "name": "Journal of Systems and Software",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JSS"
+      ]
+    },
+    {
+      "id": "re-journal",
+      "name": "Requirements Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "RE"
+      ]
+    },
+    {
+      "id": "scp",
+      "name": "Science of Computer Programming",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "SCP"
+      ]
+    },
+    {
+      "id": "sosym",
+      "name": "Software and Systems Modeling",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "SoSyM"
+      ]
+    },
+    {
+      "id": "stvr",
+      "name": "Software Testing, Verification and Reliability",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "STVR"
+      ]
+    },
+    {
+      "id": "spe",
+      "name": "Software: Practice and Experience",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "SPE"
+      ]
+    },
+    {
+      "id": "cl",
+      "name": "Computer Languages, Systems and Structures",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "CL"
+      ]
+    },
+    {
+      "id": "ijseke",
+      "name": "International Journal of Software Engineering and Knowledge Engineering",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJSEKE"
+      ]
+    },
+    {
+      "id": "sttt",
+      "name": "International Journal on Software Tools for Technology Transfer",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "STTT"
+      ]
+    },
+    {
+      "id": "jlamp",
+      "name": "Journal of Logical and Algebraic Methods in Programming",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JLAMP"
+      ]
+    },
+    {
+      "id": "jwe",
+      "name": "Journal of Web Engineering",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JWE"
+      ]
+    },
+    {
+      "id": "soca",
+      "name": "Service Oriented Computing and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "SOCA"
+      ]
+    },
+    {
+      "id": "sqj",
+      "name": "Software Quality Journal",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "SQJ"
+      ]
+    },
+    {
+      "id": "tplp",
+      "name": "Theory and Practice of Logic Programming",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TPLP"
+      ]
+    },
+    {
+      "id": "pacmpl",
+      "name": "Proceedings of the ACM on Programming Languages",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PACM PL"
+      ]
+    },
+    {
+      "id": "pldi",
+      "name": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "PLDI"
+      ]
+    },
+    {
+      "id": "popl",
+      "name": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "POPL"
+      ]
+    },
+    {
+      "id": "fse-conference",
+      "name": "ACM International Conference on the Foundations of Software Engineering",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "FSE"
+      ]
+    },
+    {
+      "id": "sosp",
+      "name": "ACM Symposium on Operating Systems Principles",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SOSP"
+      ]
+    },
+    {
+      "id": "oopsla",
+      "name": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "OOPSLA"
+      ]
+    },
+    {
+      "id": "ase-conference",
+      "name": "International Conference on Automated Software Engineering",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ASE"
+      ]
+    },
+    {
+      "id": "icse",
+      "name": "International Conference on Software Engineering",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ICSE"
+      ]
+    },
+    {
+      "id": "issta",
+      "name": "International Symposium on Software Testing and Analysis",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ISSTA"
+      ]
+    },
+    {
+      "id": "osdi",
+      "name": "USENIX Symposium on Operating Systems Design and Implementation",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "OSDI"
+      ]
+    },
+    {
+      "id": "fm",
+      "name": "International Symposium on Formal Methods",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "FM"
+      ]
+    },
+    {
+      "id": "ecoop",
+      "name": "European Conference on Object-Oriented Programming",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ECOOP"
+      ]
+    },
+    {
+      "id": "etaps",
+      "name": "European Joint Conferences on Theory and Practice of Software",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ETAPS"
+      ]
+    },
+    {
+      "id": "icpc",
+      "name": "IEEE International Conference on Program Comprehension",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICPC"
+      ]
+    },
+    {
+      "id": "re-conference",
+      "name": "IEEE International Requirements Engineering Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "RE"
+      ]
+    },
+    {
+      "id": "caise",
+      "name": "International Conference on Advanced Information Systems Engineering",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CAiSE"
+      ]
+    },
+    {
+      "id": "icfp",
+      "name": "ACM SIGPLAN International Conference on Functional Programming",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICFP"
+      ]
+    },
+    {
+      "id": "lctes",
+      "name": "ACM SIGPLAN/SIGBED International Conference on Languages, Compilers and Tools for Embedded Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "LCTES"
+      ]
+    },
+    {
+      "id": "models",
+      "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "MoDELS"
+      ]
+    },
+    {
+      "id": "cp",
+      "name": "International Conference on Principles and Practice of Constraint Programming",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CP"
+      ]
+    },
+    {
+      "id": "icsoc",
+      "name": "International Conference on Service Oriented Computing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICSOC"
+      ]
+    },
+    {
+      "id": "saner",
+      "name": "IEEE International Conference on Software Analysis, Evolution, and Reengineering",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SANER"
+      ]
+    },
+    {
+      "id": "icsme",
+      "name": "International Conference on Software Maintenance and Evolution",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICSME"
+      ]
+    },
+    {
+      "id": "vmcai",
+      "name": "International Conference on Verification, Model Checking and Abstract Interpretation",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "VMCAI"
+      ]
+    },
+    {
+      "id": "icws",
+      "name": "IEEE International Conference on Web Services",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICWS"
+      ]
+    },
+    {
+      "id": "middleware",
+      "name": "International Middleware Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "Middleware"
+      ]
+    },
+    {
+      "id": "sas",
+      "name": "International Static Analysis Symposium",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SAS"
+      ]
+    },
+    {
+      "id": "esem",
+      "name": "International Symposium on Empirical Software Engineering and Measurement",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ESEM"
+      ]
+    },
+    {
+      "id": "issre",
+      "name": "IEEE International Symposium on Software Reliability Engineering",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ISSRE"
+      ]
+    },
+    {
+      "id": "hotos",
+      "name": "USENIX Workshop on Hot Topics in Operating Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "HotOS"
+      ]
+    },
+    {
+      "id": "cc",
+      "name": "International Conference on Compiler Construction",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CC"
+      ]
+    },
+    {
+      "id": "pepm",
+      "name": "ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PEPM"
+      ]
+    },
+    {
+      "id": "paste",
+      "name": "ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PASTE"
+      ]
+    },
+    {
+      "id": "aplas",
+      "name": "Asian Symposium on Programming Languages and Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APLAS"
+      ]
+    },
+    {
+      "id": "apsec",
+      "name": "Asia-Pacific Software Engineering Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APSEC"
+      ]
+    },
+    {
+      "id": "ease",
+      "name": "International Conference on Evaluation and Assessment in Software Engineering",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "EASE"
+      ]
+    },
+    {
+      "id": "iceccs",
+      "name": "International Conference on Engineering of Complex Computer Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICECCS"
+      ]
+    },
+    {
+      "id": "icst",
+      "name": "IEEE International Conference on Software Testing, Verification and Validation",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICST"
+      ]
+    },
+    {
+      "id": "ispass",
+      "name": "IEEE International Symposium on Performance Analysis of Systems and Software",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISPASS"
+      ]
+    },
+    {
+      "id": "scam",
+      "name": "IEEE International Working Conference on Source Code Analysis and Manipulation",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SCAM"
+      ]
+    },
+    {
+      "id": "compsac",
+      "name": "International Computer Software and Applications Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "COMPSAC"
+      ]
+    },
+    {
+      "id": "icfem",
+      "name": "International Conference on Formal Engineering Methods",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICFEM"
+      ]
+    },
+    {
+      "id": "sse",
+      "name": "IEEE International Conference on Software Services Engineering",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SSE"
+      ]
+    },
+    {
+      "id": "icssp",
+      "name": "International Conference on Software and System Process",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICSSP"
+      ]
+    },
+    {
+      "id": "seke",
+      "name": "International Conference on Software Engineering and Knowledge Engineering",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SEKE"
+      ]
+    },
+    {
+      "id": "qrs",
+      "name": "International Conference on Software Quality, Reliability and Security",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "QRS"
+      ]
+    },
+    {
+      "id": "icsr",
+      "name": "International Conference on Software Reuse",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICSR"
+      ]
+    },
+    {
+      "id": "icwe",
+      "name": "International Conference on Web Engineering",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICWE"
+      ]
+    },
+    {
+      "id": "spin",
+      "name": "International Symposium on Model Checking of Software",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SPIN"
+      ]
+    },
+    {
+      "id": "atva",
+      "name": "International Symposium on Automated Technology for Verification and Analysis",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ATVA"
+      ]
+    },
+    {
+      "id": "lopstr",
+      "name": "International Symposium on Logic-based Program Synthesis and Transformation",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "LOPSTR"
+      ]
+    },
+    {
+      "id": "tase",
+      "name": "International Symposium on Theoretical Aspects of Software Engineering",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "TASE"
+      ]
+    },
+    {
+      "id": "msr",
+      "name": "International Conference on Mining Software Repositories",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MSR"
+      ]
+    },
+    {
+      "id": "refsq",
+      "name": "Requirements Engineering: Foundation for Software Quality",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "REFSQ"
+      ]
+    },
+    {
+      "id": "wicsa",
+      "name": "Working IEEE/IFIP Conference on Software Architecture",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WICSA"
+      ]
+    },
+    {
+      "id": "internetware",
+      "name": "Asia-Pacific Symposium on Internetware",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "Internetware"
+      ]
+    },
+    {
+      "id": "rv",
+      "name": "International Conference on Runtime Verification",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "RV"
+      ]
+    },
+    {
+      "id": "memocode",
+      "name": "International Conference on Formal Methods and Models for System Design",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MEMOCODE"
+      ]
+    },
+    {
+      "id": "tods",
+      "name": "ACM Transactions on Database Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TODS"
+      ]
+    },
+    {
+      "id": "tois",
+      "name": "ACM Transactions on Information Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOIS"
+      ]
+    },
+    {
+      "id": "tkde",
+      "name": "IEEE Transactions on Knowledge and Data Engineering",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TKDE"
+      ]
+    },
+    {
+      "id": "vldbj",
+      "name": "The VLDB Journal",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "VLDBJ"
+      ]
+    },
+    {
+      "id": "tkdd",
+      "name": "ACM Transactions on Knowledge Discovery from Data",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TKDD"
+      ]
+    },
+    {
+      "id": "tweb",
+      "name": "ACM Transactions on the Web",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TWEB"
+      ]
+    },
+    {
+      "id": "aei",
+      "name": "Advanced Engineering Informatics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "AEI"
+      ]
+    },
+    {
+      "id": "dke",
+      "name": "Data & Knowledge Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DKE"
+      ]
+    },
+    {
+      "id": "dmkd",
+      "name": "Data Mining and Knowledge Discovery",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DMKD"
+      ]
+    },
+    {
+      "id": "ejis",
+      "name": "European Journal of Information Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "EJIS"
+      ]
+    },
+    {
+      "id": "geoinformatica",
+      "name": "GeoInformatica",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "GeoInformatica"
+      ]
+    },
+    {
+      "id": "ipm",
+      "name": "Information Processing and Management",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IPM"
+      ]
+    },
+    {
+      "id": "isci",
+      "name": "Information Sciences",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Information Sciences"
+      ]
+    },
+    {
+      "id": "is",
+      "name": "Information Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IS"
+      ]
+    },
+    {
+      "id": "jasist",
+      "name": "Journal of the Association for Information Science and Technology",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JASIST"
+      ]
+    },
+    {
+      "id": "jws",
+      "name": "Journal of Web Semantics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JWS"
+      ]
+    },
+    {
+      "id": "kais",
+      "name": "Knowledge and Information Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "KAIS"
+      ]
+    },
+    {
+      "id": "dse",
+      "name": "Data Science and Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DSE"
+      ]
+    },
+    {
+      "id": "dpd",
+      "name": "Distributed and Parallel Databases",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "DPD"
+      ]
+    },
+    {
+      "id": "im",
+      "name": "Information & Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "I&M"
+      ]
+    },
+    {
+      "id": "ipl",
+      "name": "Information Processing Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IPL"
+      ]
+    },
+    {
+      "id": "irj",
+      "name": "Information Retrieval Journal",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IR"
+      ]
+    },
+    {
+      "id": "ijcis",
+      "name": "International Journal of Cooperative Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJCIS"
+      ]
+    },
+    {
+      "id": "ijgis",
+      "name": "International Journal of Geographical Information Science",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJGIS"
+      ]
+    },
+    {
+      "id": "ijis",
+      "name": "International Journal of Intelligent Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJIS"
+      ]
+    },
+    {
+      "id": "ijkm",
+      "name": "International Journal of Knowledge Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJKM"
+      ]
+    },
+    {
+      "id": "ijswis",
+      "name": "International Journal on Semantic Web and Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJSWIS"
+      ]
+    },
+    {
+      "id": "jcis",
+      "name": "Journal of Computer Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JCIS"
+      ]
+    },
+    {
+      "id": "jdm",
+      "name": "Journal of Database Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JDM"
+      ]
+    },
+    {
+      "id": "jgitm",
+      "name": "Journal of Global Information Technology Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JGITM"
+      ]
+    },
+    {
+      "id": "jiis",
+      "name": "Journal of Intelligent Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JIIS"
+      ]
+    },
+    {
+      "id": "jsis",
+      "name": "The Journal of Strategic Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JSIS"
+      ]
+    },
+    {
+      "id": "tist",
+      "name": "ACM Transactions on Intelligent Systems and Technology",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TIST"
+      ]
+    },
+    {
+      "id": "tors",
+      "name": "ACM Transactions on Recommender Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TORS"
+      ]
+    },
+    {
+      "id": "sigmod",
+      "name": "ACM SIGMOD Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGMOD"
+      ]
+    },
+    {
+      "id": "sigkdd",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGKDD",
+        "KDD"
+      ]
+    },
+    {
+      "id": "icde",
+      "name": "IEEE International Conference on Data Engineering",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ICDE"
+      ]
+    },
+    {
+      "id": "sigir",
+      "name": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGIR"
+      ]
+    },
+    {
+      "id": "vldb",
+      "name": "International Conference on Very Large Data Bases",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "VLDB"
+      ]
+    },
+    {
+      "id": "cikm",
+      "name": "ACM International Conference on Information and Knowledge Management",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CIKM"
+      ]
+    },
+    {
+      "id": "wsdm",
+      "name": "ACM International Conference on Web Search and Data Mining",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "WSDM"
+      ]
+    },
+    {
+      "id": "pods",
+      "name": "ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PODS"
+      ]
+    },
+    {
+      "id": "dasfaa",
+      "name": "International Conference on Database Systems for Advanced Applications",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "DASFAA"
+      ]
+    },
+    {
+      "id": "ecmlpkdd",
+      "name": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ECML-PKDD"
+      ]
+    },
+    {
+      "id": "iswc",
+      "name": "IEEE International Semantic Web Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ISWC"
+      ]
+    },
+    {
+      "id": "icdm",
+      "name": "IEEE International Conference on Data Mining",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICDM"
+      ]
+    },
+    {
+      "id": "icdt",
+      "name": "International Conference on Database Theory",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICDT"
+      ]
+    },
+    {
+      "id": "edbt",
+      "name": "International Conference on Extending Database Technology",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "EDBT"
+      ]
+    },
+    {
+      "id": "cidr",
+      "name": "Conference on Innovative Data Systems Research",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CIDR"
+      ]
+    },
+    {
+      "id": "sdm",
+      "name": "SIAM International Conference on Data Mining",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SDM"
+      ]
+    },
+    {
+      "id": "recsys",
+      "name": "ACM Conference on Recommender Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "RecSys"
+      ]
+    },
+    {
+      "id": "wise",
+      "name": "Web Information Systems Engineering Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "WISE"
+      ]
+    },
+    {
+      "id": "apweb",
+      "name": "Asia Pacific Web Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APWeb"
+      ]
+    },
+    {
+      "id": "dexa",
+      "name": "International Conference on Database and Expert System Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DEXA"
+      ]
+    },
+    {
+      "id": "ecir",
+      "name": "European Conference on Information Retrieval",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ECIR"
+      ]
+    },
+    {
+      "id": "eswc",
+      "name": "Extended Semantic Web Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ESWC"
+      ]
+    },
+    {
+      "id": "webdb",
+      "name": "International Workshop on Web and Databases",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WebDB"
+      ]
+    },
+    {
+      "id": "er",
+      "name": "International Conference on Conceptual Modeling",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ER"
+      ]
+    },
+    {
+      "id": "mdm",
+      "name": "International Conference on Mobile Data Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MDM"
+      ]
+    },
+    {
+      "id": "ssdbm",
+      "name": "International Conference on Scientific and Statistical Database Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SSDBM"
+      ]
+    },
+    {
+      "id": "waim",
+      "name": "International Conference on Web Age Information Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WAIM"
+      ]
+    },
+    {
+      "id": "sstd",
+      "name": "International Symposium on Spatial and Temporal Databases",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SSTD"
+      ]
+    },
+    {
+      "id": "pakdd",
+      "name": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PAKDD"
+      ]
+    },
+    {
+      "id": "adma",
+      "name": "International Conference on Advanced Data Mining and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ADMA"
+      ]
+    },
+    {
+      "id": "wisa",
+      "name": "Web Information Systems and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WISA"
+      ]
+    },
+    {
+      "id": "tit",
+      "name": "IEEE Transactions on Information Theory",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TIT"
+      ]
+    },
+    {
+      "id": "iandc",
+      "name": "Information and Computation",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "IANDC"
+      ]
+    },
+    {
+      "id": "sicomp",
+      "name": "SIAM Journal on Computing",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "SICOMP"
+      ]
+    },
+    {
+      "id": "talg",
+      "name": "ACM Transactions on Algorithms",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TALG"
+      ]
+    },
+    {
+      "id": "tocl",
+      "name": "ACM Transactions on Computational Logic",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOCL"
+      ]
+    },
+    {
+      "id": "toms",
+      "name": "ACM Transactions on Mathematical Software",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOMS"
+      ]
+    },
+    {
+      "id": "algorithmica",
+      "name": "Algorithmica",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Algorithmica"
+      ]
+    },
+    {
+      "id": "cc-journal",
+      "name": "Computational Complexity",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "CC"
+      ]
+    },
+    {
+      "id": "fac",
+      "name": "Formal Aspects of Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "FAC"
+      ]
+    },
+    {
+      "id": "fmsd",
+      "name": "Formal Methods in System Design",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "FMSD"
+      ]
+    },
+    {
+      "id": "informs",
+      "name": "INFORMS Journal on Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "INFORMS"
+      ]
+    },
+    {
+      "id": "jcss",
+      "name": "Journal of Computer and System Sciences",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JCSS"
+      ]
+    },
+    {
+      "id": "jgo",
+      "name": "Journal of Global Optimization",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JGO"
+      ]
+    },
+    {
+      "id": "jsc",
+      "name": "Journal of Symbolic Computation",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JSC"
+      ]
+    },
+    {
+      "id": "mscs",
+      "name": "Mathematical Structures in Computer Science",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "MSCS"
+      ]
+    },
+    {
+      "id": "tcs",
+      "name": "Theoretical Computer Science",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TCS"
+      ]
+    },
+    {
+      "id": "acta",
+      "name": "Acta Informatica",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "ACTA"
+      ]
+    },
+    {
+      "id": "apal",
+      "name": "Annals of Pure and Applied Logic",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "APAL"
+      ]
+    },
+    {
+      "id": "dam",
+      "name": "Discrete Applied Mathematics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "DAM"
+      ]
+    },
+    {
+      "id": "fuin",
+      "name": "Fundamenta Informaticae",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "FUIN"
+      ]
+    },
+    {
+      "id": "ipl-c",
+      "name": "Information Processing Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IPL"
+      ]
+    },
+    {
+      "id": "jcomplexity",
+      "name": "Journal of Complexity",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JCOMPLEXITY"
+      ]
+    },
+    {
+      "id": "logcom",
+      "name": "Journal of Logic and Computation",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "LOGCOM"
+      ]
+    },
+    {
+      "id": "jsl",
+      "name": "The Journal of Symbolic Logic",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JSL"
+      ]
+    },
+    {
+      "id": "lmcs",
+      "name": "Logical Methods in Computer Science",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "LMCS"
+      ]
+    },
+    {
+      "id": "sidma",
+      "name": "SIAM Journal on Discrete Mathematics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "SIDMA"
+      ]
+    },
+    {
+      "id": "toc",
+      "name": "Theory of Computing Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Theory of Computing Systems"
+      ]
+    },
+    {
+      "id": "tqc",
+      "name": "ACM Transactions in Quantum Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TQC"
+      ]
+    },
+    {
+      "id": "tods",
+      "name": "ACM Transactions on Database Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TODS"
+      ]
+    },
+    {
+      "id": "tois",
+      "name": "ACM Transactions on Information Systems",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOIS"
+      ]
+    },
+    {
+      "id": "tkde",
+      "name": "IEEE Transactions on Knowledge and Data Engineering",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TKDE"
+      ]
+    },
+    {
+      "id": "vldbj",
+      "name": "The VLDB Journal",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "VLDBJ"
+      ]
+    },
+    {
+      "id": "tkdd",
+      "name": "ACM Transactions on Knowledge Discovery from Data",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TKDD"
+      ]
+    },
+    {
+      "id": "tweb",
+      "name": "ACM Transactions on the Web",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TWEB"
+      ]
+    },
+    {
+      "id": "aei",
+      "name": "Advanced Engineering Informatics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "AEI"
+      ]
+    },
+    {
+      "id": "dke",
+      "name": "Data & Knowledge Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DKE"
+      ]
+    },
+    {
+      "id": "dmkd",
+      "name": "Data Mining and Knowledge Discovery",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DMKD"
+      ]
+    },
+    {
+      "id": "ejis",
+      "name": "European Journal of Information Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "EJIS"
+      ]
+    },
+    {
+      "id": "geoinformatica",
+      "name": "GeoInformatica",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "GeoInformatica"
+      ]
+    },
+    {
+      "id": "ipm",
+      "name": "Information Processing and Management",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IPM"
+      ]
+    },
+    {
+      "id": "isci",
+      "name": "Information Sciences",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Information Sciences"
+      ]
+    },
+    {
+      "id": "is",
+      "name": "Information Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IS"
+      ]
+    },
+    {
+      "id": "jasist",
+      "name": "Journal of the Association for Information Science and Technology",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JASIST"
+      ]
+    },
+    {
+      "id": "jws",
+      "name": "Journal of Web Semantics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JWS"
+      ]
+    },
+    {
+      "id": "kais",
+      "name": "Knowledge and Information Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "KAIS"
+      ]
+    },
+    {
+      "id": "dse",
+      "name": "Data Science and Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DSE"
+      ]
+    },
+    {
+      "id": "dpd",
+      "name": "Distributed and Parallel Databases",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "DPD"
+      ]
+    },
+    {
+      "id": "im",
+      "name": "Information & Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "I&M"
+      ]
+    },
+    {
+      "id": "ipl",
+      "name": "Information Processing Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IPL"
+      ]
+    },
+    {
+      "id": "irj",
+      "name": "Information Retrieval Journal",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IR"
+      ]
+    },
+    {
+      "id": "ijcis",
+      "name": "International Journal of Cooperative Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJCIS"
+      ]
+    },
+    {
+      "id": "ijgis",
+      "name": "International Journal of Geographical Information Science",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJGIS"
+      ]
+    },
+    {
+      "id": "ijis",
+      "name": "International Journal of Intelligent Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJIS"
+      ]
+    },
+    {
+      "id": "ijkm",
+      "name": "International Journal of Knowledge Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJKM"
+      ]
+    },
+    {
+      "id": "ijswis",
+      "name": "International Journal on Semantic Web and Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJSWIS"
+      ]
+    },
+    {
+      "id": "jcis",
+      "name": "Journal of Computer Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JCIS"
+      ]
+    },
+    {
+      "id": "jdm",
+      "name": "Journal of Database Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JDM"
+      ]
+    },
+    {
+      "id": "jgitm",
+      "name": "Journal of Global Information Technology Management",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JGITM"
+      ]
+    },
+    {
+      "id": "jiis",
+      "name": "Journal of Intelligent Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JIIS"
+      ]
+    },
+    {
+      "id": "jsis",
+      "name": "The Journal of Strategic Information Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JSIS"
+      ]
+    },
+    {
+      "id": "tist",
+      "name": "ACM Transactions on Intelligent Systems and Technology",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TIST"
+      ]
+    },
+    {
+      "id": "tors",
+      "name": "ACM Transactions on Recommender Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TORS"
+      ]
+    },
+    {
+      "id": "sigmod",
+      "name": "ACM SIGMOD Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGMOD"
+      ]
+    },
+    {
+      "id": "sigkdd",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGKDD",
+        "KDD"
+      ]
+    },
+    {
+      "id": "icde",
+      "name": "IEEE International Conference on Data Engineering",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ICDE"
+      ]
+    },
+    {
+      "id": "sigir",
+      "name": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "SIGIR"
+      ]
+    },
+    {
+      "id": "vldb",
+      "name": "International Conference on Very Large Data Bases",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "VLDB"
+      ]
+    },
+    {
+      "id": "cikm",
+      "name": "ACM International Conference on Information and Knowledge Management",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CIKM"
+      ]
+    },
+    {
+      "id": "wsdm",
+      "name": "ACM International Conference on Web Search and Data Mining",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "WSDM"
+      ]
+    },
+    {
+      "id": "pods",
+      "name": "ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PODS"
+      ]
+    },
+    {
+      "id": "dasfaa",
+      "name": "International Conference on Database Systems for Advanced Applications",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "DASFAA"
+      ]
+    },
+    {
+      "id": "ecmlpkdd",
+      "name": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ECML-PKDD"
+      ]
+    },
+    {
+      "id": "iswc",
+      "name": "IEEE International Semantic Web Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ISWC"
+      ]
+    },
+    {
+      "id": "icdm",
+      "name": "IEEE International Conference on Data Mining",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICDM"
+      ]
+    },
+    {
+      "id": "icdt",
+      "name": "International Conference on Database Theory",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICDT"
+      ]
+    },
+    {
+      "id": "edbt",
+      "name": "International Conference on Extending Database Technology",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "EDBT"
+      ]
+    },
+    {
+      "id": "cidr",
+      "name": "Conference on Innovative Data Systems Research",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CIDR"
+      ]
+    },
+    {
+      "id": "sdm",
+      "name": "SIAM International Conference on Data Mining",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "SDM"
+      ]
+    },
+    {
+      "id": "recsys",
+      "name": "ACM Conference on Recommender Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "RecSys"
+      ]
+    },
+    {
+      "id": "wise",
+      "name": "Web Information Systems Engineering Conference",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "WISE"
+      ]
+    },
+    {
+      "id": "apweb",
+      "name": "Asia Pacific Web Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APWeb"
+      ]
+    },
+    {
+      "id": "dexa",
+      "name": "International Conference on Database and Expert System Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DEXA"
+      ]
+    },
+    {
+      "id": "ecir",
+      "name": "European Conference on Information Retrieval",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ECIR"
+      ]
+    },
+    {
+      "id": "eswc",
+      "name": "Extended Semantic Web Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ESWC"
+      ]
+    },
+    {
+      "id": "webdb",
+      "name": "International Workshop on Web and Databases",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WebDB"
+      ]
+    },
+    {
+      "id": "er",
+      "name": "International Conference on Conceptual Modeling",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ER"
+      ]
+    },
+    {
+      "id": "mdm",
+      "name": "International Conference on Mobile Data Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MDM"
+      ]
+    },
+    {
+      "id": "ssdbm",
+      "name": "International Conference on Scientific and Statistical Database Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SSDBM"
+      ]
+    },
+    {
+      "id": "waim",
+      "name": "International Conference on Web Age Information Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WAIM"
+      ]
+    },
+    {
+      "id": "sstd",
+      "name": "International Symposium on Spatial and Temporal Databases",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SSTD"
+      ]
+    },
+    {
+      "id": "pakdd",
+      "name": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PAKDD"
+      ]
+    },
+    {
+      "id": "adma",
+      "name": "International Conference on Advanced Data Mining and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ADMA"
+      ]
+    },
+    {
+      "id": "wisa",
+      "name": "Web Information Systems and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "WISA"
+      ]
+    },
+    {
+      "id": "tit",
+      "name": "IEEE Transactions on Information Theory",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TIT"
+      ]
+    },
+    {
+      "id": "iandc",
+      "name": "Information and Computation",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "IANDC"
+      ]
+    },
+    {
+      "id": "sicomp",
+      "name": "SIAM Journal on Computing",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "SICOMP"
+      ]
+    },
+    {
+      "id": "talg",
+      "name": "ACM Transactions on Algorithms",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TALG"
+      ]
+    },
+    {
+      "id": "tocl",
+      "name": "ACM Transactions on Computational Logic",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOCL"
+      ]
+    },
+    {
+      "id": "toms",
+      "name": "ACM Transactions on Mathematical Software",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TOMS"
+      ]
+    },
+    {
+      "id": "algorithmica",
+      "name": "Algorithmica",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Algorithmica"
+      ]
+    },
+    {
+      "id": "cc-journal",
+      "name": "Computational Complexity",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "CC"
+      ]
+    },
+    {
+      "id": "fac",
+      "name": "Formal Aspects of Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "FAC"
+      ]
+    },
+    {
+      "id": "fmsd",
+      "name": "Formal Methods in System Design",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "FMSD"
+      ]
+    },
+    {
+      "id": "informs",
+      "name": "INFORMS Journal on Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "INFORMS"
+      ]
+    },
+    {
+      "id": "jcss",
+      "name": "Journal of Computer and System Sciences",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JCSS"
+      ]
+    },
+    {
+      "id": "jgo",
+      "name": "Journal of Global Optimization",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JGO"
+      ]
+    },
+    {
+      "id": "jsc",
+      "name": "Journal of Symbolic Computation",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JSC"
+      ]
+    },
+    {
+      "id": "mscs",
+      "name": "Mathematical Structures in Computer Science",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "MSCS"
+      ]
+    },
+    {
+      "id": "tcs",
+      "name": "Theoretical Computer Science",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TCS"
+      ]
+    },
+    {
+      "id": "acta",
+      "name": "Acta Informatica",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "ACTA"
+      ]
+    },
+    {
+      "id": "apal",
+      "name": "Annals of Pure and Applied Logic",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "APAL"
+      ]
+    },
+    {
+      "id": "dam",
+      "name": "Discrete Applied Mathematics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "DAM"
+      ]
+    },
+    {
+      "id": "fuin",
+      "name": "Fundamenta Informaticae",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "FUIN"
+      ]
+    },
+    {
+      "id": "ipl-c",
+      "name": "Information Processing Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IPL"
+      ]
+    },
+    {
+      "id": "jcomplexity",
+      "name": "Journal of Complexity",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JCOMPLEXITY"
+      ]
+    },
+    {
+      "id": "logcom",
+      "name": "Journal of Logic and Computation",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "LOGCOM"
+      ]
+    },
+    {
+      "id": "jsl",
+      "name": "The Journal of Symbolic Logic",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JSL"
+      ]
+    },
+    {
+      "id": "lmcs",
+      "name": "Logical Methods in Computer Science",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "LMCS"
+      ]
+    },
+    {
+      "id": "sidma",
+      "name": "SIAM Journal on Discrete Mathematics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "SIDMA"
+      ]
+    },
+    {
+      "id": "toc",
+      "name": "Theory of Computing Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Theory of Computing Systems"
+      ]
+    },
+    {
+      "id": "tqc",
+      "name": "ACM Transactions in Quantum Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TQC"
+      ]
+    },
+    {
+      "id": "ai-journal",
+      "name": "Artificial Intelligence",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "AI"
+      ]
+    },
+    {
+      "id": "tpami",
+      "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TPAMI",
+        "PAMI"
+      ]
+    },
+    {
+      "id": "ijcv",
+      "name": "International Journal of Computer Vision",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "IJCV"
+      ]
+    },
+    {
+      "id": "jmlr",
+      "name": "Journal of Machine Learning Research",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "JMLR"
+      ]
+    },
+    {
+      "id": "tap",
+      "name": "ACM Transactions on Applied Perception",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TAP"
+      ]
+    },
+    {
+      "id": "aamas-journal",
+      "name": "Autonomous Agents and Multi-Agent Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "AAMAS"
+      ]
+    },
+    {
+      "id": "compling",
+      "name": "Computational Linguistics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Computational Linguistics"
+      ]
+    },
+    {
+      "id": "cviu",
+      "name": "Computer Vision and Image Understanding",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "CVIU"
+      ]
+    },
+    {
+      "id": "dke-b",
+      "name": "Data & Knowledge Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "DKE"
+      ]
+    },
+    {
+      "id": "ec",
+      "name": "Evolutionary Computation",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Evolutionary Computation"
+      ]
+    },
+    {
+      "id": "tac",
+      "name": "IEEE Transactions on Affective Computing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TAC"
+      ]
+    },
+    {
+      "id": "taslp",
+      "name": "IEEE/ACM Transactions on Audio, Speech and Language Processing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TASLP"
+      ]
+    },
+    {
+      "id": "tcyb",
+      "name": "IEEE Transactions on Cybernetics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IEEE Transactions on Cybernetics"
+      ]
+    },
+    {
+      "id": "tec",
+      "name": "IEEE Transactions on Evolutionary Computation",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TEC"
+      ]
+    },
+    {
+      "id": "tfs",
+      "name": "IEEE Transactions on Fuzzy Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TFS"
+      ]
+    },
+    {
+      "id": "tnnls",
+      "name": "IEEE Transactions on Neural Networks and Learning Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TNNLS"
+      ]
+    },
+    {
+      "id": "ijar",
+      "name": "International Journal of Approximate Reasoning",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IJAR"
+      ]
+    },
+    {
+      "id": "jair",
+      "name": "Journal of Artificial Intelligence Research",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JAIR"
+      ]
+    },
+    {
+      "id": "jar",
+      "name": "Journal of Automated Reasoning",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Journal of Automated Reasoning"
+      ]
+    },
+    {
+      "id": "jslhr",
+      "name": "Journal of Speech, Language, and Hearing Research",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JSLHR"
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": "nc",
+      "name": "Neural Computation",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Neural Computation"
+      ]
+    },
+    {
+      "id": "nn",
+      "name": "Neural Networks",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Neural Networks"
+      ]
+    },
+    {
+      "id": "pr",
+      "name": "Pattern Recognition",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "PR"
+      ]
+    },
+    {
+      "id": "tacl",
+      "name": "Transactions of the Association for Computational Linguistics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TACL"
+      ]
+    },
+    {
+      "id": "tallip",
+      "name": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TALLIP"
+      ]
+    },
+    {
+      "id": "appl-intel",
+      "name": "Applied Intelligence",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Applied Intelligence"
+      ]
+    },
+    {
+      "id": "aim",
+      "name": "Artificial Intelligence in Medicine",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "AIM"
+      ]
+    },
+    {
+      "id": "alife",
+      "name": "Artificial Life",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Artificial Life"
+      ]
+    },
+    {
+      "id": "compintel",
+      "name": "Computational Intelligence",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Computational Intelligence"
+      ]
+    },
+    {
+      "id": "csl",
+      "name": "Computer Speech & Language",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Computer Speech & Language"
+      ]
+    },
+    {
+      "id": "connsci",
+      "name": "Connection Science",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Connection Science"
+      ]
+    },
+    {
+      "id": "dss",
+      "name": "Decision Support Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "DSS"
+      ]
+    },
+    {
+      "id": "eaai",
+      "name": "Engineering Applications of Artificial Intelligence",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "EAAI"
+      ]
+    },
+    {
+      "id": "expert-sys",
+      "name": "Expert Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Expert Systems"
+      ]
+    },
+    {
+      "id": "eswa",
+      "name": "Expert Systems with Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "ESWA"
+      ]
+    },
+    {
+      "id": "fss",
+      "name": "Fuzzy Sets and Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "FSS"
+      ]
+    },
+    {
+      "id": "tg",
+      "name": "IEEE Transactions on Games",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TG"
+      ]
+    },
+    {
+      "id": "iet-cvi",
+      "name": "IET Computer Vision",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IET-CVI"
+      ]
+    },
+    {
+      "id": "iet-spr",
+      "name": "IET Signal Processing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IET Signal Processing"
+      ]
+    },
+    {
+      "id": "ivc",
+      "name": "Image and Vision Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IVC"
+      ]
+    },
+    {
+      "id": "ida",
+      "name": "Intelligent Data Analysis",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IDA"
+      ]
+    },
+    {
+      "id": "ijcia",
+      "name": "International Journal of Computational Intelligence and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJCIA"
+      ]
+    },
+    {
+      "id": "ijis-c",
+      "name": "International Journal of Intelligent Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJIS"
+      ]
+    },
+    {
+      "id": "ijns",
+      "name": "International Journal of Neural Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJNS"
+      ]
+    },
+    {
+      "id": "ijprai",
+      "name": "International Journal of Pattern Recognition and Artificial Intelligence",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJPRAI"
+      ]
+    },
+    {
+      "id": "ijufks",
+      "name": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJUFKS"
+      ]
+    },
+    {
+      "id": "ijdar",
+      "name": "International Journal on Document Analysis and Recognition",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IJDAR"
+      ]
+    },
+    {
+      "id": "jetai",
+      "name": "Journal of Experimental and Theoretical Artificial Intelligence",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JETAI"
+      ]
+    },
+    {
+      "id": "kbs",
+      "name": "Knowledge-Based Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "KBS"
+      ]
+    },
+    {
+      "id": "mt",
+      "name": "Machine Translation",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Machine Translation"
+      ]
+    },
+    {
+      "id": "mva",
+      "name": "Machine Vision and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "MVA"
+      ]
+    },
+    {
+      "id": "natcom",
+      "name": "Natural Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Natural Computing"
+      ]
+    },
+    {
+      "id": "nle",
+      "name": "Natural Language Engineering",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "NLE"
+      ]
+    },
+    {
+      "id": "nca",
+      "name": "Neural Computing and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "NCA"
+      ]
+    },
+    {
+      "id": "npl",
+      "name": "Neural Processing Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "NPL"
+      ]
+    },
+    {
+      "id": "neurocomp",
+      "name": "Neurocomputing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Neurocomputing"
+      ]
+    },
+    {
+      "id": "paa",
+      "name": "Pattern Analysis and Applications",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PAA"
+      ]
+    },
+    {
+      "id": "prl",
+      "name": "Pattern Recognition Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PRL"
+      ]
+    },
+    {
+      "id": "softcomp",
+      "name": "Soft Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Soft Computing"
+      ]
+    },
+    {
+      "id": "wi",
+      "name": "Web Intelligence",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "WI"
+      ]
+    },
+    {
+      "id": "tiis",
+      "name": "ACM Transactions on Interactive Intelligent Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TIIS"
+      ]
+    },
+    {
+      "id": "telo",
+      "name": "ACM Transactions on Evolutionary Learning and Optimization",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TELO"
+      ]
+    },
+    {
+      "id": "jats",
+      "name": "ACM Journal on Autonomous Transportation Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JATS"
+      ]
+    },
+    {
+      "id": "aaai",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "AAAI"
+      ]
+    },
+    {
+      "id": "neurips",
+      "name": "Conference on Neural Information Processing Systems",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "NeurIPS",
+        "NIPS"
+      ]
+    },
+    {
+      "id": "acl",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ACL"
+      ]
+    },
+    {
+      "id": "cvpr",
+      "name": "IEEE/CVF Computer Vision and Pattern Recognition Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "CVPR"
+      ]
+    },
+    {
+      "id": "iccv",
+      "name": "International Conference on Computer Vision",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ICCV"
+      ]
+    },
+    {
+      "id": "icml",
+      "name": "International Conference on Machine Learning",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ICML"
+      ]
+    },
+    {
+      "id": "iclr",
+      "name": "International Conference on Learning Representations",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "ICLR"
+      ]
+    },
+    {
+      "id": "colt",
+      "name": "Annual Conference on Computational Learning Theory",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "COLT"
+      ]
+    },
+    {
+      "id": "emnlp",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "EMNLP"
+      ]
+    },
+    {
+      "id": "ecai",
+      "name": "European Conference on Artificial Intelligence",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ECAI"
+      ]
+    },
+    {
+      "id": "eccv",
+      "name": "European Conference on Computer Vision",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ECCV"
+      ]
+    },
+    {
+      "id": "icra",
+      "name": "IEEE International Conference on Robotics and Automation",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICRA"
+      ]
+    },
+    {
+      "id": "icaps",
+      "name": "International Conference on Automated Planning and Scheduling",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICAPS"
+      ]
+    },
+    {
+      "id": "iccbr",
+      "name": "International Conference on Case-Based Reasoning",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICCBR"
+      ]
+    },
+    {
+      "id": "coling",
+      "name": "International Conference on Computational Linguistics",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "COLING"
+      ]
+    },
+    {
+      "id": "kr",
+      "name": "International Conference on Principles of Knowledge Representation and Reasoning",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "KR"
+      ]
+    },
+    {
+      "id": "uai",
+      "name": "Conference on Uncertainty in Artificial Intelligence",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "UAI"
+      ]
+    },
+    {
+      "id": "aamas-conf",
+      "name": "International Joint Conference on Autonomous Agents and Multi-agent Systems",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "AAMAS"
+      ]
+    },
+    {
+      "id": "ppsn",
+      "name": "Parallel Problem Solving from Nature",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PPSN"
+      ]
+    },
+    {
+      "id": "naacl",
+      "name": "North American Chapter of the Association for Computational Linguistics",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "NAACL"
+      ]
+    },
+    {
+      "id": "ijcai",
+      "name": "International Joint Conference on Artificial Intelligence",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "IJCAI"
+      ]
+    },
+    {
+      "id": "aistats",
+      "name": "International Conference on Artificial Intelligence and Statistics",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "AISTATS"
+      ]
+    },
+    {
+      "id": "accv",
+      "name": "Asian Conference on Computer Vision",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ACCV"
+      ]
+    },
+    {
+      "id": "acml",
+      "name": "Asian Conference on Machine Learning",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ACML"
+      ]
+    },
+    {
+      "id": "bmvc",
+      "name": "British Machine Vision Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "BMVC"
+      ]
+    },
+    {
+      "id": "nlpcc",
+      "name": "CCF International Conference on Natural Language Processing and Chinese Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "NLPCC"
+      ]
+    },
+    {
+      "id": "conll",
+      "name": "Conference on Computational Natural Language Learning",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CoNLL"
+      ]
+    },
+    {
+      "id": "gecco",
+      "name": "Genetic and Evolutionary Computation Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "GECCO"
+      ]
+    },
+    {
+      "id": "ictai",
+      "name": "IEEE International Conference on Tools with Artificial Intelligence",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICTAI"
+      ]
+    },
+    {
+      "id": "iros",
+      "name": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IROS"
+      ]
+    },
+    {
+      "id": "alt",
+      "name": "International Conference on Algorithmic Learning Theory",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ALT"
+      ]
+    },
+    {
+      "id": "icann",
+      "name": "International Conference on Artificial Neural Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICANN"
+      ]
+    },
+    {
+      "id": "fg",
+      "name": "IEEE International Conference on Automatic Face and Gesture Recognition",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "FG"
+      ]
+    },
+    {
+      "id": "icdar",
+      "name": "International Conference on Document Analysis and Recognition",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICDAR"
+      ]
+    },
+    {
+      "id": "ilp",
+      "name": "International Conference on Inductive Logic Programming",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ILP"
+      ]
+    },
+    {
+      "id": "ksem",
+      "name": "International conference on Knowledge Science, Engineering and Management",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "KSEM"
+      ]
+    },
+    {
+      "id": "iconip",
+      "name": "International Conference on Neural Information Processing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICONIP"
+      ]
+    },
+    {
+      "id": "icpr",
+      "name": "International Conference on Pattern Recognition",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICPR"
+      ]
+    },
+    {
+      "id": "ijcb",
+      "name": "International Joint Conference on Biometrics",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IJCB"
+      ]
+    },
+    {
+      "id": "ijcnn",
+      "name": "International Joint Conference on Neural Networks",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IJCNN"
+      ]
+    },
+    {
+      "id": "pricai",
+      "name": "Pacific Rim International Conference on Artificial Intelligence",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "PRICAI"
+      ]
+    },
+    {
+      "id": "cec",
+      "name": "Congress on Evolutionary Computation",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IEEE CEC",
+        "CEC"
+      ]
+    },
+    {
+      "id": "dai",
+      "name": "International Conference on Distributed Artificial Intelligence",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DAI"
+      ]
+    },
+    {
+      "id": "tochi",
+      "name": "ACM Transactions on Computer-Human Interaction",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "TOCHI"
+      ]
+    },
+    {
+      "id": "ijhcs",
+      "name": "International Journal of Human-Computer Studies",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "IJHCS"
+      ]
+    },
+    {
+      "id": "cscw-journal",
+      "name": "Computer Supported Cooperative Work",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "CSCW"
+      ]
+    },
+    {
+      "id": "hci",
+      "name": "Human-Computer Interaction",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "HCI"
+      ]
+    },
+    {
+      "id": "iwc",
+      "name": "Interacting with Computers",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IWC"
+      ]
+    },
+    {
+      "id": "ijhci",
+      "name": "International Journal of Human-Computer Interaction",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "IJHCI"
+      ]
+    },
+    {
+      "id": "umuai",
+      "name": "User Modeling and User-Adapted Interaction",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "UMUAI"
+      ]
+    },
+    {
+      "id": "tsmc",
+      "name": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TSMC"
+      ]
+    },
+    {
+      "id": "ccftpci",
+      "name": "CCF Transactions on Pervasive Computing and Interaction",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "CCF TPCI"
+      ]
+    },
+    {
+      "id": "bit",
+      "name": "Behaviour & Information Technology",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "BIT"
+      ]
+    },
+    {
+      "id": "puc",
+      "name": "Personal and Ubiquitous Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PUC"
+      ]
+    },
+    {
+      "id": "pmc",
+      "name": "Pervasive and Mobile Computing",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PMC"
+      ]
+    },
+    {
+      "id": "pacmhci",
+      "name": "Proceedings of the ACM on Human-Computer Interaction",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "PACMHCI"
+      ]
+    },
+    {
+      "id": "thri",
+      "name": "ACM Transactions on Human-Robot Interaction",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "THRI"
+      ]
+    },
+    {
+      "id": "cscw-conf",
+      "name": "ACM Conference On Computer-Supported Cooperative Work And Social Computing",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "CSCW"
+      ]
+    },
+    {
+      "id": "chi",
+      "name": "ACM Conference on Human Factors in Computing Systems",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "CHI"
+      ]
+    },
+    {
+      "id": "ubicomp",
+      "name": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "UbiComp"
+      ]
+    },
+    {
+      "id": "uist",
+      "name": "ACM Symposium on User Interface Software and Technology",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "UIST"
+      ]
+    },
+    {
+      "id": "group",
+      "name": "ACM International Conference on Supporting Group Work",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "GROUP"
+      ]
+    },
+    {
+      "id": "iui",
+      "name": "ACM International Conference on Intelligent User Interfaces",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "IUI"
+      ]
+    },
+    {
+      "id": "iss",
+      "name": "ACM International Conference on Interactive Surfaces and Spaces",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ISS"
+      ]
+    },
+    {
+      "id": "ecscw",
+      "name": "European Conference on Computer Supported Cooperative Work",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ECSCW"
+      ]
+    },
+    {
+      "id": "percom",
+      "name": "IEEE International Conference on Pervasive Computing and Communications",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "PERCOM"
+      ]
+    },
+    {
+      "id": "mobilehci",
+      "name": "ACM International Conference on Mobile Human-Computer Interaction",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "MobileHCI"
+      ]
+    },
+    {
+      "id": "icwsm",
+      "name": "The International AAAI Conference on Web and Social Media",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ICWSM"
+      ]
+    },
+    {
+      "id": "dis",
+      "name": "ACM SIGCHI Conference on Designing Interactive Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "DIS"
+      ]
+    },
+    {
+      "id": "icmi",
+      "name": "ACM International Conference on Multimodal Interaction",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICMI"
+      ]
+    },
+    {
+      "id": "assets",
+      "name": "International ACM SIGACCESS Conference on Computers and Accessibility",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ASSETS"
+      ]
+    },
+    {
+      "id": "gi",
+      "name": "Graphics Interface",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "GI"
+      ]
+    },
+    {
+      "id": "uic",
+      "name": "IEEE International Conference on Ubiquitous Intelligence and Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "UIC"
+      ]
+    },
+    {
+      "id": "haptics",
+      "name": "IEEE World Haptics Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "World Haptics"
+      ]
+    },
+    {
+      "id": "interact",
+      "name": "International Conference on Human-Computer Interaction of International Federation for Information Processing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "INTERACT"
+      ]
+    },
+    {
+      "id": "idc",
+      "name": "ACM Interaction Design and Children",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IDC"
+      ]
+    },
+    {
+      "id": "collaboratecom",
+      "name": "International Conference on Collaborative Computing: Networking, Applications and Worksharing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CollaborateCom"
+      ]
+    },
+    {
+      "id": "cscwd",
+      "name": "International Conference on Computer Supported Cooperative Work in Design",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CSCWD"
+      ]
+    },
+    {
+      "id": "coopis",
+      "name": "International Conference on Cooperative Information Systems",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "CoopIS"
+      ]
+    },
+    {
+      "id": "mobiquitous",
+      "name": "International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "MobiQuitous"
+      ]
+    },
+    {
+      "id": "avi",
+      "name": "International Working Conference on Advanced Visual Interfaces",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "AVI"
+      ]
+    },
+    {
+      "id": "gpc",
+      "name": "Conference on Green, Pervasive and Cloud Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "GPC"
+      ]
+    },
+    {
+      "id": "icxr",
+      "name": "CCF International Conference on Extended Reality",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICXR"
+      ]
+    },
+    {
+      "id": "jacm",
+      "name": "Journal of the ACM",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "JACM"
+      ]
+    },
+    {
+      "id": "procieee",
+      "name": "Proceedings of the IEEE",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "Proc. IEEE"
+      ]
+    },
+    {
+      "id": "scis",
+      "name": "Science China Information Sciences",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "SCIS"
+      ]
+    },
+    {
+      "id": "bioinformatics",
+      "name": "Bioinformatics",
+      "tier": "A",
+      "type": "journal",
+      "aliases": [
+        "Bioinformatics"
+      ]
+    },
+    {
+      "id": "bib",
+      "name": "Briefings in Bioinformatics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Briefings in Bioinformatics"
+      ]
+    },
+    {
+      "id": "cognition",
+      "name": "Cognition",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "Cognition"
+      ]
+    },
+    {
+      "id": "tase",
+      "name": "IEEE Transactions on Automation Science and Engineering",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TASAE"
+      ]
+    },
+    {
+      "id": "tgars",
+      "name": "IEEE Transactions on Geoscience and Remote Sensing",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TGARS"
+      ]
+    },
+    {
+      "id": "tits",
+      "name": "IEEE Transactions on Intelligent Transportation Systems",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TITS"
+      ]
+    },
+    {
+      "id": "tmi",
+      "name": "IEEE Transactions on Medical Imaging",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TMI"
+      ]
+    },
+    {
+      "id": "tr",
+      "name": "IEEE Transactions on Robotics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TR"
+      ]
+    },
+    {
+      "id": "tcbb",
+      "name": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "TCBB"
+      ]
+    },
+    {
+      "id": "jcst",
+      "name": "Journal of Computer Science and Technology",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JCST"
+      ]
+    },
+    {
+      "id": "jamia",
+      "name": "Journal of the American Medical Informatics Association",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "JAMIA"
+      ]
+    },
+    {
+      "id": "ploscb",
+      "name": "PLOS Computational Biology",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "PLOS Computational Biology"
+      ]
+    },
+    {
+      "id": "compj",
+      "name": "The Computer Journal",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "The Computer Journal"
+      ]
+    },
+    {
+      "id": "www-journal",
+      "name": "World Wide Web",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "WWW"
+      ]
+    },
+    {
+      "id": "fcs",
+      "name": "Frontiers of Computer Science",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "FCS"
+      ]
+    },
+    {
+      "id": "bcra",
+      "name": "Blockchain: Research and Applications",
+      "tier": "B",
+      "type": "journal",
+      "aliases": [
+        "BCRA"
+      ]
+    },
+    {
+      "id": "bmcbioinfo",
+      "name": "BMC Bioinformatics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "BMC Bioinformatics"
+      ]
+    },
+    {
+      "id": "cybsys",
+      "name": "Cybernetics and Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Cybernetics and Systems"
+      ]
+    },
+    {
+      "id": "lgrs",
+      "name": "IEEE Geoscience and Remote Sensing Letters",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IEEE Geoscience and Remote Sensing Letters"
+      ]
+    },
+    {
+      "id": "jbhi",
+      "name": "IEEE Journal of Biomedical and Health Informatics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JBHI"
+      ]
+    },
+    {
+      "id": "tbd",
+      "name": "IEEE Transactions on Big Data",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TBD"
+      ]
+    },
+    {
+      "id": "iet-its",
+      "name": "IET Intelligent Transport Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IET Intelligent Transport Systems"
+      ]
+    },
+    {
+      "id": "jbi",
+      "name": "Journal of Biomedical Informatics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "JBI"
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Medical Image Analysis",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "Medical Image Analysis"
+      ]
+    },
+    {
+      "id": "tii",
+      "name": "IEEE Transactions on Industrial Informatics",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TII"
+      ]
+    },
+    {
+      "id": "tcps",
+      "name": "ACM Transactions on Cyber-Physical Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TCPS"
+      ]
+    },
+    {
+      "id": "toce",
+      "name": "ACM Transactions on Computing Education",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TOCE"
+      ]
+    },
+    {
+      "id": "fitee",
+      "name": "Frontiers of Information Technology & Electronic Engineering",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "FITE"
+      ]
+    },
+    {
+      "id": "tcss",
+      "name": "IEEE Transactions on Computational Social Systems",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "TCSS"
+      ]
+    },
+    {
+      "id": "tr-journal",
+      "name": "IEEE Transactions on Reliability",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "IEEE Transactions on Reliability"
+      ]
+    },
+    {
+      "id": "health",
+      "name": "ACM Transactions on Computing for Healthcare",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": "acmdlt",
+      "name": "ACM Distributed Ledger Technologies: Research and Practice",
+      "tier": "C",
+      "type": "journal",
+      "aliases": [
+        "ACM DLT"
+      ]
+    },
+    {
+      "id": "www-conf",
+      "name": "International World Wide Web Conference",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "WWW"
+      ]
+    },
+    {
+      "id": "rtss",
+      "name": "IEEE Real-Time Systems Symposium",
+      "tier": "A",
+      "type": "conference",
+      "aliases": [
+        "RTSS"
+      ]
+    },
+    {
+      "id": "cogsci",
+      "name": "Annual Meeting of the Cognitive Science Society",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "CogSci"
+      ]
+    },
+    {
+      "id": "bibm",
+      "name": "IEEE International Conference on Bioinformatics and Biomedicine",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "BIBM"
+      ]
+    },
+    {
+      "id": "emsoft",
+      "name": "International Conference on Embedded Software",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "EMSOFT"
+      ]
+    },
+    {
+      "id": "ismb",
+      "name": "International Conference on Intelligent Systems for Molecular Biology",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "ISMB"
+      ]
+    },
+    {
+      "id": "recomb",
+      "name": "Annual International Conference on Research in Computational Molecular Biology",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "RECOMB"
+      ]
+    },
+    {
+      "id": "miccai",
+      "name": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "MICCAI"
+      ]
+    },
+    {
+      "id": "wine",
+      "name": "Conference on Web and Internet Economics",
+      "tier": "B",
+      "type": "conference",
+      "aliases": [
+        "WINE"
+      ]
+    },
+    {
+      "id": "amia",
+      "name": "American Medical Informatics Association Annual Symposium",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "AMIA"
+      ]
+    },
+    {
+      "id": "apbc",
+      "name": "Asia Pacific Bioinformatics Conference",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "APBC"
+      ]
+    },
+    {
+      "id": "ieeebigdata",
+      "name": "IEEE International Conference on Big Data",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IEEE BigData"
+      ]
+    },
+    {
+      "id": "ieeecloud",
+      "name": "IEEE International Conference on Cloud Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IEEE CLOUD"
+      ]
+    },
+    {
+      "id": "smc",
+      "name": "IEEE International Conference on Systems, Man, and Cybernetics",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SMC"
+      ]
+    },
+    {
+      "id": "cosit",
+      "name": "International Conference on Spatial Information Theory",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "COSIT"
+      ]
+    },
+    {
+      "id": "isbra",
+      "name": "International Symposium on Bioinformatics Research and Applications",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ISBRA"
+      ]
+    },
+    {
+      "id": "sagt",
+      "name": "International Symposium on Algorithmic Game Theory",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SAGT"
+      ]
+    },
+    {
+      "id": "sigspatial",
+      "name": "ACM Special Interest Group on Spatial Information",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "SIGSPATIAL"
+      ]
+    },
+    {
+      "id": "icic",
+      "name": "International Conference on Intelligent Computing",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICIC"
+      ]
+    },
+    {
+      "id": "icss",
+      "name": "International Conference on Service Science",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "ICSS"
+      ]
+    },
+    {
+      "id": "aft",
+      "name": "Advances in Financial Technologies",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "AFT"
+      ]
+    },
+    {
+      "id": "ijtcsfaw",
+      "name": "International Joint Conference on Theoretical Computer Science - Frontier of Algorithmic Wisdom",
+      "tier": "C",
+      "type": "conference",
+      "aliases": [
+        "IJTCS-FAW"
+      ]
+    }
+  ]
+}

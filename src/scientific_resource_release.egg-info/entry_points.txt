@@ -1,0 +1,2 @@
+[console_scripts]
+sr-release = scientific_resource_release.cli:main
