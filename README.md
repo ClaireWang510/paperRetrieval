@@ -1,4 +1,4 @@
-# ScientificResource Release
+# An intent-aware scientific paper retrieval and recommendation system based on fine-grained semantic representation
 
 This directory contains a cleaned and publish-ready standalone release for three core stages:
 
@@ -11,7 +11,7 @@ The implementation focuses on:
 - Stable and explicit interfaces.
 - Batch-friendly orchestration with resume support.
 - Clear CLI entry points.
-- Fully standalone code in `release/src/scientific_resource_release`.
+- Fully standalone code in `src/scientific_resource_release`.
 
 ## Directory Layout
 
@@ -52,15 +52,15 @@ pip install -e .
 ```bash
 sr-release preprocess one \
   --arxiv-id 2401.00663 \
-  --project-root /home/wy/ScientificResource
+  --project-root ./ScientificResource
 ```
 
 ### 2) Preprocess in batch (from JSONL)
 
 ```bash
 sr-release preprocess batch \
-  --project-root /home/wy/ScientificResource \
-  --jsonl /home/wy/ScientificResource/data/raw/arxiv_ai_2024_2025_augmented.jsonl
+  --project-root ./ScientificResource \
+  --jsonl ./ScientificResource/data/raw/arxiv_ai_2024_2025_augmented.jsonl
 ```
 
 ### 3) Generate semantic units for one paper
@@ -68,21 +68,21 @@ sr-release preprocess batch \
 ```bash
 sr-release semantic-units one \
   --arxiv-id 2401.00663 \
-  --project-root /home/wy/ScientificResource
+  --project-root ./ScientificResource
 ```
 
 ### 4) Generate semantic units in batch
 
 ```bash
 sr-release semantic-units batch \
-  --project-root /home/wy/ScientificResource
+  --project-root ./ScientificResource
 ```
 
 ### 5) Ingest extracted results into PostgreSQL + pgvector
 
 ```bash
 sr-release retrieval ingest \
-  --data-root /home/wy/ScientificResource/data/extracted
+  --data-root ./ScientificResource/data/extracted
 ```
 
 ### 6) Run hybrid-doc-semantic retrieval
@@ -106,9 +106,9 @@ sr-release retrieval search \
 
 ## Notes
 
-- This release layer writes outputs to `ScientificResource/data/extracted/{arxiv_id}` by default.
+- This release writes outputs to `ScientificResource/data/extracted/{arxiv_id}` by default.
 - Semantic Scholar metadata refresh is supported in preprocessing and is non-blocking.
-- Retrieval uses two stages: doc-level hybrid retrieval plus semantic-unit/chunk dense matching, then intent-channel weighted RRF fusion.
+- Retrieval uses two stages: doc-level hybrid retrieval plus semantic-representation dense matching, then intent-channel weighted RRF fusion.
 - Knowledge mode adds cross-encoder rerank, recommendation reason generation, and a concise grounded answer.
 - LLM-related capability is optional and controlled by env vars or CLI args:
   - `LLM_API_KEY`
