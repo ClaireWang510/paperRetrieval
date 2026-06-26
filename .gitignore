@@ -1,2 +1,88 @@
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# -------------------------
+# Env / secrets
+# -------------------------
 .env
-prototype/backend/.env
+.env.*
+!.env.example
+!env.sample
+
+# -------------------------
+# Logs / temp
+# -------------------------
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# -------------------------
+# Model / cache / artifacts
+# -------------------------
+.cache/
+**/.cache/
+**/huggingface/
+**/.huggingface/
+**/transformers_cache/
+**/torch_cache/
+**/sentence_transformers/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.npz
+*.npy
+*.h5
+*.joblib
+*.pickle
+*.pkl
+
+# -------------------------
+# Frontend (prototype)
+# -------------------------
+prototype/frontend/node_modules/
+prototype/frontend/dist/
+prototype/frontend/.vite/
+prototype/frontend/.cache/
+
+# -------------------------
+# Backend runtime cache
+# -------------------------
+prototype/backend/.cache/
+prototype/backend/__pycache__/
