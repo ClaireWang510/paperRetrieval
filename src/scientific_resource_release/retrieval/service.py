@@ -5,6 +5,7 @@ import math
 import os
 import re
 import threading
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -460,6 +461,80 @@ def _fetch_top_semantic_units(db, arxiv_id: str, query: str, reranker: BGERerank
     return out
 
 
+def _fetch_top_semantic_units_batch(
+    db,
+    arxiv_ids: List[str],
+    query: str,
+    reranker: BGEReranker,
+    top_n: int = 3,
+    pool_per_paper: int = 12,
+) -> Dict[str, List[Dict[str, str]]]:
+    ordered_ids: List[str] = []
+    seen = set()
+    for raw in arxiv_ids:
+        aid = str(raw or "").strip()
+        if aid and aid not in seen:
+            seen.add(aid)
+            ordered_ids.append(aid)
+    if not ordered_ids:
+        return {}
+
+    sql = text(
+        """
+        SELECT arxiv_id, role, content
+        FROM (
+            SELECT arxiv_id, role, content,
+                   ROW_NUMBER() OVER (PARTITION BY arxiv_id ORDER BY length(content) DESC) AS rn
+            FROM semantic_chunks
+            WHERE arxiv_id = ANY(:arxiv_ids)
+              AND content IS NOT NULL
+              AND length(content) > 0
+        ) t
+        WHERE rn <= :pool_per_paper
+        ORDER BY arxiv_id, rn
+        """
+    )
+    rows = db.execute(
+        sql,
+        {
+            "arxiv_ids": ordered_ids,
+            "pool_per_paper": max(3, int(pool_per_paper)),
+        },
+    ).fetchall()
+
+    per_paper_units: Dict[str, List[Dict[str, Any]]] = {}
+    flat_documents: List[str] = []
+    flat_index: List[tuple[str, int]] = []
+
+    for arxiv_id, role, content in rows:
+        aid = str(arxiv_id or "").strip()
+        txt = str(content or "").strip()
+        if not aid or not txt:
+            continue
+        bucket = per_paper_units.setdefault(aid, [])
+        bucket.append({"role": str(role or "other"), "content": txt, "_score": 0.0})
+        flat_documents.append(txt)
+        flat_index.append((aid, len(bucket) - 1))
+
+    if not flat_documents:
+        return {aid: [] for aid in ordered_ids}
+
+    scores = reranker.score(query=query, documents=flat_documents)
+    for idx, score in enumerate(scores):
+        if idx >= len(flat_index):
+            break
+        aid, unit_idx = flat_index[idx]
+        per_paper_units[aid][unit_idx]["_score"] = float(score)
+
+    top_limit = max(1, min(int(top_n), 5))
+    out: Dict[str, List[Dict[str, str]]] = {}
+    for aid in ordered_ids:
+        units = per_paper_units.get(aid, [])
+        units.sort(key=lambda item: float(item.get("_score", 0.0)), reverse=True)
+        out[aid] = [{"role": unit.get("role", "other"), "content": unit.get("content", "")} for unit in units[:top_limit]]
+    return out
+
+
 def _generate_reason(query: str, title: Optional[str], abstract: Optional[str], semantic_units: List[Dict[str, str]]) -> str:
     if not semantic_units:
         return ""
@@ -609,26 +684,180 @@ class RetrievalKnowledgeService:
         init_db(self.engine)
         self.session_factory = get_session_factory(self.engine)
         self.reranker = BGEReranker()
+        self._reason_cache: Dict[str, Dict[str, Any]] = {}
+        self._reason_cache_lock = threading.Lock()
+        self._answer_context_cache: Dict[str, Dict[str, Any]] = {}
+        self._answer_cache: Dict[str, Dict[str, Any]] = {}
+        self._answer_cache_lock = threading.Lock()
+
+    def cache_search_context(self, query: str, search_payload: Dict[str, Any]) -> None:
+        query_value = str(query or "").strip()
+        if not query_value:
+            return
+
+        results = []
+        for item in list(search_payload.get("results") or []):
+            if not isinstance(item, dict):
+                continue
+            results.append(
+                {
+                    "arxiv_id": item.get("arxiv_id"),
+                    "title": item.get("title"),
+                    "abstract": item.get("abstract"),
+                    "venue": item.get("venue"),
+                    "citation_count": item.get("citation_count"),
+                    "score": item.get("score"),
+                    "final_score": item.get("final_score"),
+                }
+            )
+
+        payload = {
+            "query": query_value,
+            "rewritten_query": str(search_payload.get("rewritten_query") or query_value),
+            "results": results,
+        }
+        with self._answer_cache_lock:
+            if len(self._answer_context_cache) > 256:
+                self._answer_context_cache.clear()
+                self._answer_cache.clear()
+            self._answer_context_cache[query_value] = payload
+
+    def generate_answer_for_query(self, query: str, top_n_papers: int = 10, top_n_units: int = 3) -> Dict[str, Any]:
+        query_value = str(query or "").strip()
+        if not query_value:
+            raise ValueError("query is required")
+
+        with self._answer_cache_lock:
+            context = self._answer_context_cache.get(query_value)
+        if context is None:
+            raise ValueError("No cached retrieval context for this query. Please search first.")
+
+        results = [dict(item) for item in list(context.get("results") or []) if isinstance(item, dict)]
+        if not results:
+            return {"query": query_value, "answer": None, "answer_references": []}
+
+        limit = max(1, min(int(top_n_papers), len(results), 10))
+        unit_limit = max(1, min(int(top_n_units), 5))
+        selected = results[:limit]
+
+        cache_fingerprint = "|".join(str(item.get("arxiv_id") or "") for item in selected)
+        cache_key = f"{query_value}\n{limit}\n{unit_limit}\n{cache_fingerprint}"
+        with self._answer_cache_lock:
+            cached_answer = self._answer_cache.get(cache_key)
+        if cached_answer is not None:
+            return dict(cached_answer)
+
+        arxiv_ids = [str(item.get("arxiv_id") or "").strip() for item in selected]
+        with self.session_factory() as db:
+            units_map = _fetch_top_semantic_units_batch(
+                db,
+                arxiv_ids=arxiv_ids,
+                query=query_value,
+                reranker=self.reranker,
+                top_n=unit_limit,
+                pool_per_paper=12,
+            )
+
+        answer_results: List[Dict[str, Any]] = []
+        for item in selected:
+            aid = str(item.get("arxiv_id") or "").strip()
+            out = dict(item)
+            out["semantic_units"] = list(units_map.get(aid, []))
+            answer_results.append(out)
+
+        answer = _synthesize_answer(
+            query=query_value,
+            rewritten_query=str(context.get("rewritten_query") or query_value),
+            results=answer_results,
+        )
+        answer_bundle = _attach_answer_references(answer, answer_results, self.reranker)
+        payload = {
+            "query": query_value,
+            "answer": answer_bundle.get("answer_markdown") or None,
+            "answer_references": answer_bundle.get("references") or [],
+        }
+
+        with self._answer_cache_lock:
+            if len(self._answer_cache) > 1024:
+                self._answer_cache.clear()
+            self._answer_cache[cache_key] = dict(payload)
+        return payload
 
     def search(self, request: SearchRequest) -> Dict[str, Any]:
         with self.session_factory() as db:
             response = run_search_hybrid_doc_semantic_units_intent(request, db)
         return response.model_dump()
 
+    def generate_recommendation_reason(
+        self,
+        query: str,
+        arxiv_id: str,
+        title: Optional[str] = None,
+        abstract: Optional[str] = None,
+        top_n: int = 3,
+    ) -> Dict[str, Any]:
+        query_value = str(query or "").strip()
+        arxiv_value = str(arxiv_id or "").strip()
+        if not query_value:
+            raise ValueError("query is required")
+        if not arxiv_value:
+            raise ValueError("arxiv_id is required")
+
+        cache_key = f"{query_value}\n{arxiv_value}"
+        with self._reason_cache_lock:
+            cached = self._reason_cache.get(cache_key)
+        if cached is not None:
+            return dict(cached)
+
+        with self.session_factory() as db:
+            semantic_units = _fetch_top_semantic_units(
+                db,
+                arxiv_id=arxiv_value,
+                query=query_value,
+                reranker=self.reranker,
+                top_n=max(1, min(int(top_n), 5)),
+            )
+
+        reason = _generate_reason(
+            query=query_value,
+            title=title,
+            abstract=abstract,
+            semantic_units=semantic_units,
+        )
+        payload = {
+            "arxiv_id": arxiv_value,
+            "recommendation_reason": reason,
+            "semantic_units": semantic_units,
+        }
+        with self._reason_cache_lock:
+            if len(self._reason_cache) > 2048:
+                self._reason_cache.clear()
+            self._reason_cache[cache_key] = dict(payload)
+        return payload
+
     def search_with_knowledge(
         self,
         request: SearchRequest,
         top_k: Optional[int] = None,
-        reason_top_k: int = 10,
+        reason_top_k: int = 0,
         rerank_pool_size: Optional[int] = None,
         rerank_mode: str = "semantic_units_intent_max",
         rerank_intent_decomposer: str = "llm",
+        generate_answer: bool = True,
     ) -> Dict[str, Any]:
         del rerank_mode
+        profile: Dict[str, float] = {}
+        t_total = time.perf_counter()
+
+        t0 = time.perf_counter()
         search_payload = self.search(request)
+        profile["search_retrieval_s"] = round(time.perf_counter() - t0, 4)
+
         candidates = [dict(item) for item in search_payload.get("results", [])]
         if not candidates:
             search_payload["answer"] = None
+            profile["total_s"] = round(time.perf_counter() - t_total, 4)
+            search_payload["timings"] = profile
             return search_payload
 
         retrieval_scores = [float(item.get("score", 0.0) or 0.0) for item in candidates]
@@ -647,22 +876,37 @@ class RetrievalKnowledgeService:
         if not intent_queries:
             intent_queries = _build_intent_queries(request.query, rerank_intent_decomposer)
 
+        t0 = time.perf_counter()
         with self.session_factory() as db:
-            units_map = _fetch_semantic_units_for_candidates(db, candidates, shortlist_idx, max_units=24)
+            units_map = _fetch_semantic_units_for_candidates(db, candidates, shortlist_idx, max_units=12)
+        profile["rerank_prepare_s"] = round(time.perf_counter() - t0, 4)
 
+        t0 = time.perf_counter()
         rerank_scores = [0.0 for _ in candidates]
+        shortlist_positions: List[int] = []
+        shortlist_documents: List[str] = []
         for idx in shortlist_idx:
             candidate = candidates[idx]
             aid = str(candidate.get("arxiv_id") or "")
-            units = _extract_candidate_semantic_units(candidate, max_units=24) or units_map.get(aid, [])
+            units = _extract_candidate_semantic_units(candidate, max_units=12) or units_map.get(aid, [])
             if not units:
-                units = [_build_rerank_document(candidate)]
+                document = _build_rerank_document(candidate)
+            else:
+                document = "\n".join(units[:3])
+            shortlist_positions.append(idx)
+            shortlist_documents.append(document)
 
-            per_intent = []
-            for intent_query in intent_queries:
-                scores = self.reranker.score(intent_query, units)
-                per_intent.append(max(scores) if scores else 0.0)
-            rerank_scores[idx] = sum(per_intent) / len(per_intent) if per_intent else 0.0
+        per_candidate_scores: List[List[float]] = [[] for _ in shortlist_positions]
+        for intent_query in intent_queries:
+            scores = self.reranker.score(intent_query, shortlist_documents)
+            for pos, score in enumerate(scores):
+                if pos < len(per_candidate_scores):
+                    per_candidate_scores[pos].append(float(score))
+
+        for pos, idx in enumerate(shortlist_positions):
+            values = per_candidate_scores[pos] if pos < len(per_candidate_scores) else []
+            rerank_scores[idx] = sum(values) / len(values) if values else 0.0
+        profile["rerank_score_s"] = round(time.perf_counter() - t0, 4)
 
         weights = ScoreWeights()
         enriched = []
@@ -682,35 +926,53 @@ class RetrievalKnowledgeService:
         enriched.sort(key=lambda row: float(row.get("final_score", 0.0)), reverse=True)
         final_results = enriched[:limit]
 
-        with self.session_factory() as db:
-            for idx, item in enumerate(final_results):
-                if idx >= reason_top_k:
-                    item["recommendation_reason"] = ""
-                    continue
-                semantic_units = _fetch_top_semantic_units(
-                    db,
-                    arxiv_id=str(item.get("arxiv_id") or ""),
-                    query=request.query,
-                    reranker=self.reranker,
-                    top_n=3,
-                )
-                item["semantic_units"] = semantic_units
-                item["recommendation_reason"] = _generate_reason(
-                    query=request.query,
-                    title=item.get("title"),
-                    abstract=item.get("abstract"),
-                    semantic_units=semantic_units,
-                )
+        if reason_top_k > 0:
+            t0 = time.perf_counter()
+            with self.session_factory() as db:
+                for idx, item in enumerate(final_results):
+                    if idx >= reason_top_k:
+                        item["semantic_units"] = []
+                        item["recommendation_reason"] = ""
+                        continue
 
-        answer = _synthesize_answer(
-            query=request.query,
-            rewritten_query=str(search_payload.get("rewritten_query") or request.query),
-            results=final_results,
-        )
-        answer_bundle = _attach_answer_references(answer, final_results, self.reranker)
+                    semantic_units = _fetch_top_semantic_units(
+                        db,
+                        arxiv_id=str(item.get("arxiv_id") or ""),
+                        query=request.query,
+                        reranker=self.reranker,
+                        top_n=3,
+                    )
+                    item["semantic_units"] = semantic_units
+                    item["recommendation_reason"] = _generate_reason(
+                        query=request.query,
+                        title=item.get("title"),
+                        abstract=item.get("abstract"),
+                        semantic_units=semantic_units,
+                    )
+            profile["reason_and_evidence_s"] = round(time.perf_counter() - t0, 4)
+        else:
+            for item in final_results:
+                item["semantic_units"] = []
+                item["recommendation_reason"] = ""
+            profile["reason_and_evidence_s"] = 0.0
+
+        if generate_answer:
+            t0 = time.perf_counter()
+            answer = _synthesize_answer(
+                query=request.query,
+                rewritten_query=str(search_payload.get("rewritten_query") or request.query),
+                results=final_results,
+            )
+            answer_bundle = _attach_answer_references(answer, final_results, self.reranker)
+            profile["answer_s"] = round(time.perf_counter() - t0, 4)
+        else:
+            answer_bundle = {"answer_markdown": None, "references": []}
+            profile["answer_s"] = 0.0
 
         search_payload["results"] = final_results
         search_payload["total"] = len(final_results)
-        search_payload["answer"] = answer_bundle.get("answer_markdown") or answer
+        search_payload["answer"] = answer_bundle.get("answer_markdown") or None
         search_payload["answer_references"] = answer_bundle.get("references") or []
+        profile["total_s"] = round(time.perf_counter() - t_total, 4)
+        search_payload["timings"] = profile
         return search_payload

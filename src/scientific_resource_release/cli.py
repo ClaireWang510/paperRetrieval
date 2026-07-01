@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 from pathlib import Path
 
 from scientific_resource_release.models import PreprocessConfig, SemanticUnitConfig
@@ -12,6 +13,35 @@ from scientific_resource_release.utils.logging_utils import setup_logging
 
 
 logger = logging.getLogger(__name__)
+
+
+def _maybe_load_env(argv: list[str]) -> None:
+    try:
+        from dotenv import load_dotenv
+    except ImportError:
+        return
+
+    project_root: Path | None = None
+    for index, arg in enumerate(argv):
+        if arg == "--project-root" and index + 1 < len(argv):
+            project_root = Path(argv[index + 1]).expanduser()
+            break
+
+    candidate_paths = []
+    if project_root is not None:
+        candidate_paths.append(project_root / ".env")
+    candidate_paths.append(Path.cwd() / ".env")
+
+    seen = set()
+    for env_path in candidate_paths:
+        resolved = env_path.resolve()
+        if resolved in seen:
+            continue
+        seen.add(resolved)
+        if resolved.exists():
+            load_dotenv(resolved, override=False)
+            logger.info("Loaded environment from %s", resolved)
+            return
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -94,6 +124,7 @@ def _add_semantic_common_args(parser: argparse.ArgumentParser) -> None:
 
 def main() -> None:
     setup_logging()
+    _maybe_load_env(os.sys.argv[1:])
     parser = _build_parser()
     args = parser.parse_args()
 

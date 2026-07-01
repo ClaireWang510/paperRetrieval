@@ -21,8 +21,13 @@
 conda activate ScientificResource
 cd release/prototype/backend
 
-# 可选：安装 Flask 相关依赖
+# 安装原型后端依赖
 pip install -r requirements.txt
+
+# 安装 release 核心依赖（检索/向量/重排/LLM）
+cd ../../
+pip install -e .
+cd prototype/backend
 
 # 可选：环境变量
 cp .env.example .env
@@ -32,12 +37,12 @@ export DATABASE_URL="postgresql://localhost:5432/scientific_resource"
 PYTHONPATH=../../src python app.py
 ```
 
-默认监听：`http://127.0.0.1:8000`
+默认监听：`http://127.0.0.1:8001`
 
 健康检查：
 
 ```bash
-curl http://127.0.0.1:8000/api/health
+curl http://127.0.0.1:8001/api/health
 ```
 
 ## 2. 前端启动
@@ -51,7 +56,7 @@ cd release/prototype/frontend
 # 若缺依赖则安装
 npm install
 
-# 启动开发服务（已代理 /api 到 8000）
+# 启动开发服务（已代理 /api 到 8001）
 npm run dev
 ```
 

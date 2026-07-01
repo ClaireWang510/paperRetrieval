@@ -86,3 +86,5 @@ prototype/frontend/.cache/
 # -------------------------
 prototype/backend/.cache/
 prototype/backend/__pycache__/
+prototype/backend/agent_workspace_store/
+prototype/backend/semantic_workspace/

@@ -1,4 +1,5 @@
 <script setup>
+import axios from 'axios'
 import { computed, ref } from 'vue'
 import EvidenceCard from './EvidenceCard.vue'
 
@@ -6,6 +7,10 @@ const props = defineProps({
     item: {
         type: Object,
         required: true,
+    },
+    searchQuery: {
+        type: String,
+        default: '',
     },
 })
 
@@ -25,8 +30,13 @@ const pdfUrl = computed(() =>
 const latexUrl = computed(() =>
     normalizedId.value ? `/api/download/latex/${encodeURIComponent(normalizedId.value)}` : '',
 )
+const extraSemanticUnits = ref([])
 const semanticUnits = computed(() =>
-    Array.isArray(props.item.semantic_units) ? props.item.semantic_units : [],
+    extraSemanticUnits.value.length
+        ? extraSemanticUnits.value
+        : Array.isArray(props.item.semantic_units)
+          ? props.item.semantic_units
+          : [],
 )
 const hasDownloads = computed(() => Boolean(pdfUrl.value || latexUrl.value))
 
@@ -39,6 +49,34 @@ const displayAbstract = computed(() => {
 })
 
 const evidenceExpanded = ref(false)
+const reasonLoading = ref(false)
+const reasonError = ref('')
+const localReason = ref('')
+const recommendationReason = computed(() => localReason.value || props.item.recommendation_reason || '')
+const canGenerateReason = computed(() => Boolean(normalizedId.value && props.searchQuery.trim()))
+
+const generateReason = async () => {
+    if (!canGenerateReason.value || reasonLoading.value) return
+    reasonLoading.value = true
+    reasonError.value = ''
+    try {
+        const resp = await axios.post('/api/reason', {
+            query: props.searchQuery,
+            arxiv_id: props.item.arxiv_id,
+            title: props.item.title,
+            abstract: props.item.abstract,
+            top_n: 3,
+        })
+        const data = resp?.data || {}
+        localReason.value = data.recommendation_reason || ''
+        extraSemanticUnits.value = Array.isArray(data.semantic_units) ? data.semantic_units : []
+    } catch (e) {
+        reasonError.value = e?.response?.data?.error || e?.message || '推荐理由生成失败'
+    } finally {
+        reasonLoading.value = false
+    }
+}
+
 const displayEvidenceUnits = computed(() => {
     return evidenceExpanded.value ? semanticUnits.value : []
 })
@@ -60,9 +98,20 @@ const displayEvidenceUnits = computed(() => {
             </p>
         </header>
 
-        <p v-if="item.recommendation_reason" class="reason">
-            <strong>推荐理由：</strong>{{ item.recommendation_reason }}
+        <p v-if="recommendationReason" class="reason">
+            <strong>推荐理由：</strong>{{ recommendationReason }}
         </p>
+        <div v-else class="reason-action-row">
+            <button
+                type="button"
+                class="toggle-btn"
+                :disabled="reasonLoading || !canGenerateReason"
+                @click="generateReason"
+            >
+                {{ reasonLoading ? '生成中...' : '生成推荐理由' }}
+            </button>
+            <p v-if="reasonError" class="reason-error">{{ reasonError }}</p>
+        </div>
         <p class="abstract">{{ displayAbstract }}</p>
         <button
             v-if="abstractNeedCollapse"
@@ -166,6 +215,16 @@ const displayEvidenceUnits = computed(() => {
 .reason {
     margin: 0.8rem 0 0.4rem;
     color: #234046;
+}
+
+.reason-action-row {
+    margin-top: 0.8rem;
+}
+
+.reason-error {
+    margin: 0.42rem 0 0;
+    color: #a11b1b;
+    font-size: 0.86rem;
 }
 
 .abstract {

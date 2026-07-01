@@ -10,8 +10,11 @@ const loading = ref(false)
 const error = ref('')
 const answer = ref('')
 const answerReferences = ref([])
+const answerLoading = ref(false)
+const answerError = ref('')
 const results = ref([])
 const currentPage = ref(1)
+const executedQuery = ref('')
 
 const PAGE_SIZE = 10
 
@@ -34,8 +37,11 @@ const doSearch = async () => {
     error.value = ''
     answer.value = ''
     answerReferences.value = []
+    answerLoading.value = false
+    answerError.value = ''
     results.value = []
     currentPage.value = 1
+    executedQuery.value = ''
 
     try {
         const resp = await axios.post('/api/search', {
@@ -43,8 +49,9 @@ const doSearch = async () => {
             top_k: DEFAULT_TOP_K,
         })
         const data = resp.data || {}
-        answer.value = data.answer || ''
-        answerReferences.value = Array.isArray(data.answer_references) ? data.answer_references : []
+        executedQuery.value = query.value.trim()
+        answer.value = ''
+        answerReferences.value = []
         results.value = Array.isArray(data.results) ? data.results : []
     } catch (e) {
         error.value = e?.response?.data?.error || e?.message || '请求失败'
@@ -60,10 +67,33 @@ const goToPrevPage = () => {
 const goToNextPage = () => {
     if (currentPage.value < totalPages.value) currentPage.value += 1
 }
+
+const generateAnswer = async () => {
+    if (!executedQuery.value.trim() || answerLoading.value) return
+    answerLoading.value = true
+    answerError.value = ''
+    answer.value = ''
+    answerReferences.value = []
+    try {
+        const resp = await axios.post('/api/answer', {
+            query: executedQuery.value.trim(),
+            top_n_papers: 10,
+            top_n_units: 3,
+        })
+        const data = resp?.data || {}
+        answer.value = data.answer || ''
+        answerReferences.value = Array.isArray(data.answer_references) ? data.answer_references : []
+    } catch (e) {
+        answerError.value = e?.response?.data?.error || e?.message || '回答生成失败'
+    } finally {
+        answerLoading.value = false
+    }
+}
 </script>
 
 <template>
-    <main class="page">
+    <div class="page-shell">
+        <main class="page">
         <section class="hero">
             <p class="tag">Scientific Resource Assistant</p>
             <h1>智能科学研究助手</h1>
@@ -81,16 +111,23 @@ const goToNextPage = () => {
             <p v-if="error" class="error">{{ error }}</p>
         </section>
 
-        <section v-if="answer" class="panel">
-            <h2>基于语义证据的简要回答</h2>
-            <p class="answer">{{ answer }}</p>
+        <section v-if="hasResults" class="panel">
+            <div class="answer-toolbar">
+                <h2>基于语义证据的简要回答</h2>
+                <button class="search-btn" :disabled="answerLoading" @click="generateAnswer">
+                    {{ answerLoading ? '生成中...' : '生成简要回答' }}
+                </button>
+            </div>
+            <p v-if="answerError" class="error">{{ answerError }}</p>
+            <p v-if="answer" class="answer">{{ answer }}</p>
+            <p v-else-if="!answerLoading" class="muted">当前未生成回答，点击上方按钮按需生成。</p>
             <div v-if="answerReferences.length > 0" class="references">
                 <p class="references-title">引用文章</p>
                 <ul>
                     <li v-for="ref in answerReferences" :key="`${ref.paper_index}-${ref.arxiv_id}`">
                         [{{ ref.paper_index }}] {{ ref.title || '无标题' }} (arXiv: {{ ref.arxiv_id || '-' }})
                     </li>
-                </ul>  
+                </ul>
             </div>
         </section>
 
@@ -104,9 +141,21 @@ const goToNextPage = () => {
                 </div>
             </div>
 
-            <PaperCard v-for="item in paginatedResults" :key="item.arxiv_id || item.title" :item="item" />
+            <PaperCard
+                v-for="item in paginatedResults"
+                :key="item.arxiv_id || item.title"
+                :item="item"
+                :search-query="executedQuery"
+            />
         </section>
-    </main>
+        </main>
+
+        <!--
+        <section class="agent-page-wrap">
+            <AgentWorkspace />
+        </section>
+        -->
+    </div>
 </template>
 
 <style scoped>
@@ -124,6 +173,10 @@ const goToNextPage = () => {
     max-width: 1120px;
     margin: 0 auto;
     padding: 2.2rem 1rem 3rem;
+}
+
+.page-shell {
+    min-height: 100vh;
 }
 
 .hero {
@@ -220,6 +273,19 @@ select:focus {
 h2 {
     margin: 0 0 0.4rem;
     color: #0f4e58;
+}
+
+.answer-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+}
+
+.answer-toolbar .search-btn {
+    margin-top: 0;
 }
 
 .answer {
@@ -324,6 +390,10 @@ li {
 
     .page {
         padding-top: 1.4rem;
+    }
+
+    .top-nav-wrap {
+        padding-top: 0.8rem;
     }
 
     .pagination {

@@ -33,6 +33,12 @@ class PreprocessConfig(BaseConfig):
             self.llm_base_url = os.getenv("LLM_BASE_URL", "https://api.openai.com/v1")
         if self.llm_model is None:
             self.llm_model = os.getenv("LLM_MODEL", "gpt-4o-mini")
+        timeout_value = os.getenv("LLM_TIMEOUT_SECONDS", "").strip()
+        if timeout_value:
+            try:
+                self.llm_timeout_seconds = int(timeout_value)
+            except ValueError:
+                pass
 
 
 @dataclass
@@ -56,3 +62,9 @@ class SemanticUnitConfig(BaseConfig):
             self.llm_base_url = os.getenv("LLM_BASE_URL", "https://api.openai.com/v1")
         if self.llm_model is None:
             self.llm_model = os.getenv("LLM_MODEL", "gpt-4o-mini")
+        timeout_value = os.getenv("LLM_TIMEOUT_SECONDS", "").strip()
+        if timeout_value:
+            try:
+                self.llm_timeout_seconds = int(timeout_value)
+            except ValueError:
+                pass
